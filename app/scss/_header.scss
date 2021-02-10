@@ -1,0 +1,275 @@
+.header {
+  background-color: $red;
+}
+.header__inner {
+  padding: 0 20px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.header__logo {
+  display: none;
+}
+
+.header__logos {
+  display: flex;
+  img {
+    display: block;
+  }
+  img + img {
+    margin-left: 10px;
+  }
+}
+
+.social svg g {
+  transition: all 0.3s;
+}
+.social__link:hover svg g {
+  fill: $blue;
+  opacity: 1;
+}
+.social {
+  display: flex;
+  padding-top: 7px;
+  &__link {
+    display: block;
+  }
+  &__list + &__list {
+    margin-left: 25px;
+  }
+}
+.nav__logo {
+  padding-top: 83px;
+  margin-right: 35px;
+  position: relative;
+  z-index: 15;
+}
+.nav__logo-link {
+  img {
+    display: block;
+    max-width: 117px;
+    height: 129px;
+    object-fit: cover;
+  }
+}
+.nav__menu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-right: 10px;
+}
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  &-item {
+    margin-right: 40px;
+    position: relative;
+    height: 100%;
+    padding: 25px 0;
+    &:hover {
+      .catalog-podmenu {
+        max-height: 600px;
+        transition: all 0.8s;
+        border-top: 1px solid $red;
+      }
+    }
+  }
+}
+
+.menu__list-item a {
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+}
+
+/// gambac
+.menu__btn {
+  display: none;
+}
+
+// dropdown
+.header__menu-font {
+  color: $red;
+}
+
+.header__menu-dropdown {
+  z-index: 2;
+  background-color: #fff;
+  border-top: 1px solid $red;
+  position: relative;
+  box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+  border-radius: 0 0 4px 4px;
+  .menu-list:first-child {
+    margin-top: 16px;
+  }
+  .menu-list:last-child {
+    margin-bottom: 16px;
+  }
+  li {
+    padding: 8px 10px;
+    margin: 0 20px;
+    width: 230px;
+    &:hover {
+      color: #fff;
+      background-color: $red;
+      border-radius: 4px;
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+.user-menu {
+  max-height: 0;
+  overflow: hidden;
+  border: none;
+  position: absolute;
+  top: 100px;
+  right: 0;
+}
+.catalog-podmenu {
+  max-height: 0;
+  width: 250px;
+  overflow: hidden;
+  border: none;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  text-transform: none;
+}
+
+/// media
+@media (max-width: 1220px) {
+  .menu__list-item a {
+    font-size: 16px;
+  }
+  .menu__list-item {
+    margin-right: 30px;
+  }
+
+  .nav__logo-link img {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+  }
+  .nav__logo {
+    padding-top: 60px;
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .header__menu-dropdown li {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .catalog-podmenu {
+    position: static;
+    width: 100%;
+  }
+  .header__inner {
+    position: relative;
+  }
+  .header__logo {
+    z-index: 15;
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+    top: 15px;
+    img {
+      display: block;
+      height: 100px;
+      width: 100px;
+      object-fit: contain;
+    }
+  }
+  .nav__logo {
+    display: none;
+  }
+  .menu__list-item {
+    padding: 0;
+    margin-right: 0;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    &:hover {
+      .catalog-podmenu {
+        transition: none;
+      }
+    }
+    .menu__list-category {
+      padding: 15px 0;
+    }
+  }
+
+  .menu__list {
+    z-index: 99;
+    display: none;
+    position: absolute;
+    background-color: $red;
+    top: 70px;
+    right: -15px;
+    max-width: 320px;
+    width: 100%;
+  }
+
+  .menu__btn {
+    z-index: 16;
+    position: relative;
+    display: inline-block;
+    max-width: 30px;
+    width: 100%;
+    cursor: pointer;
+    margin-left: 30px;
+    div {
+      background-color: #fff;
+      height: 3px;
+      & + div {
+        margin-top: 5px;
+      }
+    }
+  }
+  .menu__list-item a {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .header__inner {
+    padding: 0;
+  }
+  .header__logo {
+    position: relative;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu__btn {
+    padding-right: 15px;
+    max-width: 45px;
+  }
+  .header__logo {
+    padding-left: 15px;
+  }
+  .header__logo img {
+    width: 70px;
+    height: 70px;
+  }
+  .header__logos {
+    display: none;
+  }
+  .menu__list {
+    max-width: 100%;
+    right: 0;
+  }
+  .header .container {
+    padding: 0;
+  }
+}
