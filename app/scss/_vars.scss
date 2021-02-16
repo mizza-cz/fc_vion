@@ -1,3 +1,11 @@
 $red: #eb1a13;
 $blue: #07114f;
 $gray: #292f3f;
+$green: #26b23d;
+$yellow: #ebcd13;
+
+@mixin img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

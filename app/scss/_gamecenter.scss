@@ -1,0 +1,417 @@
+.game {
+  background-color: rgba(0, 0, 0, 0.15);
+  color: #292f3f;
+  text-align: center;
+  padding-top: 82px;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+  &__club {
+    display: flex;
+    align-items: center;
+  }
+  .result__title {
+    margin-bottom: 0;
+    margin-left: 12px;
+  }
+}
+
+.game__result {
+  font-size: 60px;
+  color: $green;
+  margin: 0 92px;
+  &-detail {
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    color: #2c2c2c;
+  }
+}
+
+.game__club-img {
+  width: 127px;
+  height: 127px;
+  img {
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    width: 100%;
+  }
+}
+
+.game__club-name {
+  font-size: 48px;
+  max-width: 280px;
+}
+.game__club--right {
+  .game__club-name {
+    text-align: left;
+    margin-left: 33px;
+  }
+}
+.game__club--left {
+  .game__club-name {
+    text-align: end;
+    margin-right: 50px;
+  }
+}
+
+.game__info {
+  font-family: 'Inter', sans-serif;
+  color: #000;
+  line-height: 22px;
+  font-size: 14px;
+  padding-bottom: 55px;
+}
+.game__info-title {
+  font-weight: 700;
+}
+
+.game__info-gols,
+.game__info-arbiter {
+  font-weight: 400;
+}
+
+// tabs
+
+.game-tabs__tab {
+  font-size: 21px;
+  text-transform: uppercase;
+  color: #2c2c2c;
+  padding-bottom: 12px;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.game-tabs__tab + .game-tabs__tab {
+  margin-left: 50px;
+}
+.game-tabs__tab.active {
+  color: $red;
+  border-bottom: 3px solid $red;
+}
+.game-tabs {
+  padding-bottom: 15px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.15);
+  margin-bottom: 58px;
+}
+
+/// tabs - content
+
+.game__tab {
+  background-color: #fff;
+}
+
+.game__wrapper {
+  .typo__row {
+    margin: 0 auto;
+    max-width: 860px;
+  }
+  .typo__clanek-text {
+    padding-left: 0;
+  }
+  .typo__sprava,
+  .typo-clanek,
+  .typo__tabl,
+  .odrazky {
+    margin-left: 0;
+  }
+}
+
+.game__tab {
+  display: none;
+  &.tab-active {
+    display: block;
+  }
+}
+
+/// sestavy
+.sestavy {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  &__club {
+    max-width: 460px;
+    width: 100%;
+  }
+}
+.sestavy__club + .sestavy__club {
+  margin-left: 20px;
+}
+
+.sestavy__top {
+  text-transform: uppercase;
+  display: flex;
+  border-bottom: 1px solid #e7edf5;
+  padding-bottom: 18px;
+
+  &-title {
+    font-size: 21px;
+    line-height: 31px;
+    color: $red;
+  }
+  &-subtitle {
+    font-size: 18px;
+    color: #94a2b0;
+    display: block;
+  }
+  &-logo {
+    width: 61px;
+    height: 61px;
+    margin-right: 20px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.player {
+  display: flex;
+  border-bottom: 1px solid #e7edf5;
+  padding: 13px 20px 14px 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  &__position {
+    color: #000;
+
+    position: relative;
+    padding-right: 38px;
+    margin-right: 20px;
+  }
+}
+
+.player.player--out {
+  .player__position::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 3px;
+    background-image: url('../images/svg/arrow-red.svg');
+    @include img;
+    height: 15px;
+    width: 10px;
+  }
+}
+
+.player.player--in {
+  .player__position::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 3px;
+    background-image: url('../images/svg/arrow-green.svg');
+    @include img;
+    height: 15px;
+    width: 10px;
+  }
+}
+.player__number {
+  color: $red;
+  width: 30px;
+  margin-right: 25px;
+}
+.player__name-link {
+  font-weight: 400;
+  color: #000;
+  font-family: 'Inter', sans-serif;
+}
+.player__name {
+  display: flex;
+  width: 100%;
+  max-width: 245px;
+  justify-content: space-between;
+}
+.card-yellow {
+  width: 18px;
+  height: 22px;
+  background-color: $yellow;
+  display: block;
+  border-radius: 4px;
+}
+.player__goals {
+  display: flex;
+}
+.player-goal {
+  background-image: url('../images/svg/ball.svg');
+  width: 19px;
+  height: 19px;
+  margin-left: 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.sestavy__nahradnici {
+  color: #94a2b0;
+  font-size: 18px;
+  line-height: 14px;
+  margin-top: 65px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+// timeline
+.timeline__row {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.timeline__line {
+  position: relative;
+  padding-bottom: 42px;
+}
+.timeline__col {
+  flex: 0 0 50%;
+  max-width: 50%;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+}
+.timeline__number {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0 auto;
+  min-width: 32px;
+  z-index: 15;
+  transform: translateX(50%);
+}
+
+.timeline {
+  position: relative;
+  padding: 2px;
+  margin-right: 2px;
+  margin: 0 auto;
+  margin-bottom: 64px;
+  padding-bottom: 40px;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 0;
+    left: -1px;
+    margin: 0 auto;
+    height: 100%;
+    width: 1px;
+    background-color: #d6dfe8;
+  }
+}
+.timeline__line--finish {
+  padding-bottom: 62px;
+}
+
+.round-finish {
+  display: block;
+  text-align: center;
+  width: 112px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 4px;
+}
+.round-polocas {
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+.round-number,
+.round-finish,
+.round-polocas {
+  color: #2c2c2c;
+  text-transform: uppercase;
+  background-color: #d6dfe8;
+  font-size: 14px;
+}
+.round-number {
+  padding: 7px 10px;
+  border-radius: 16px;
+}
+.col-auto {
+  display: flex;
+  align-items: center;
+  width: auto;
+  max-width: none;
+  padding-right: 0;
+  padding-left: 0;
+  position: relative;
+  top: 2px;
+  flex-direction: column;
+}
+.timeline__icon--left {
+  padding-left: 41px;
+  padding-right: 13px;
+}
+.timeline__icon {
+  position: relative;
+  top: 3px;
+}
+.icon-goal {
+  background-image: url('../images/svg/ball.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 19px;
+  height: 19px;
+  display: block;
+}
+
+.timeline__player,
+.timeline__message {
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #000;
+  padding-top: 2px;
+  // line-height: 21px;
+}
+.justify-content-end {
+  justify-content: flex-end;
+  .icon {
+    margin-right: 4px;
+  }
+}
+.justify-content-start {
+  justify-content: flex-start;
+  .icon {
+    margin-left: 5px;
+    position: relative;
+  }
+  .icon-arrow-out {
+    top: 4px;
+  }
+  .icon-arrow-in {
+    top: 3px;
+  }
+}
+
+.text-right {
+  text-align: right;
+}
+
+.timeline__icon--right {
+  padding-right: 42px;
+  padding-left: 17px;
+  position: relative;
+  bottom: -4px;
+}
+.timeline__message {
+  max-width: 291px;
+}
+.timeline__line--refresh.timeline__line {
+  padding-bottom: 28px;
+}
+.timeline__line--triangle {
+  padding-bottom: 63px;
+  line-height: 19px;
+}
+.timeline__line--polocas {
+  padding-bottom: 59px;
+}

@@ -67,12 +67,12 @@
   };
 })();
 
-(function () {
-  Timer.start({
-    timer: document.getElementById('js-timer'),
-    endtime: document.getElementById('js-timer').getAttribute('data-endtime'),
-  });
-})();
+// (function () {
+//   Timer.start({
+//     timer: document.getElementById('js-timer'),
+//     endtime: document.getElementById('js-timer').getAttribute('data-endtime'),
+//   });
+// })();
 
 $(function () {
   // scroll button
@@ -149,8 +149,19 @@ $(function () {
       enabled: true,
     },
   });
-  // fullscreen gallery
-  // $('#lightgallery').lightGallery({});
+
+  /// tabs game
+  $('.game__wrapper .game-tabs__tab').on('click', function (event) {
+    var id = $(this).attr('data-id');
+    $('.game__wrapper').find('.game__tab').removeClass('tab-active').hide();
+    $('.game__wrapper .game-tabs').find('.game-tabs__tab').removeClass('active');
+    $(this).addClass('active');
+    $('#' + id)
+      .addClass('tab-active')
+      .fadeIn();
+    return false;
+  });
+
   $('#lightgallery').on('click', function () {
     $(this).lightGallery({
       dynamic: true,
