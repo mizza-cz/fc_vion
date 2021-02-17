@@ -288,7 +288,6 @@
   margin-right: 2px;
   margin: 0 auto;
   margin-bottom: 64px;
-  padding-bottom: 40px;
   &::before {
     content: '';
     position: absolute;
@@ -303,6 +302,12 @@
 }
 .timeline__line--finish {
   padding-bottom: 62px;
+}
+.timeline__line--start {
+  padding-bottom: 0;
+  .round-finish {
+    width: 130px;
+  }
 }
 
 .round-finish {
