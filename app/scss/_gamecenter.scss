@@ -345,6 +345,10 @@
   position: relative;
   top: 2px;
   flex-direction: column;
+  .card-yellow {
+    top: -3px;
+    position: relative;
+  }
 }
 .timeline__icon--left {
   padding-left: 41px;
@@ -370,7 +374,6 @@
   font-weight: 400;
   color: #000;
   padding-top: 2px;
-  // line-height: 21px;
 }
 .justify-content-end {
   justify-content: flex-end;
@@ -414,4 +417,70 @@
 }
 .timeline__line--polocas {
   padding-bottom: 59px;
+}
+.timeline__icon--goal {
+  top: 2px;
+}
+
+/// porovnani
+.porovnani__inner {
+  max-width: 960px;
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 9px;
+  margin-bottom: 78px;
+}
+.porovnani__infoline {
+  margin-bottom: 32px;
+}
+.porovnani__infoline-header {
+  color: #94a2b0;
+  text-transform: uppercase;
+  font-size: 18px;
+  text-align: center;
+  position: relative;
+  margin: 0 10px 18px 10px;
+}
+.porovnani__line {
+  margin-left: 10px;
+  background-color: #e7edf5;
+  border-radius: 17px;
+  max-width: 940px;
+  width: 100%;
+  height: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.porovnani__number {
+  position: absolute;
+  color: $red;
+  font-size: 36px;
+  top: -9px;
+  &--right {
+    right: 0;
+  }
+  &--left {
+    left: 0;
+  }
+}
+.porovnani__value--left {
+  background-color: #94a2b0;
+  border-top-left-radius: 17px;
+  border-bottom-left-radius: 17px;
+  margin-left: auto;
+}
+.porovnani__value--right {
+  border-top-right-radius: 17px;
+  border-bottom-right-radius: 17px;
+  background-color: $red;
+}
+.porovnani__value {
+  display: block;
+  height: 100%;
+}
+.porovnani__line-box {
+  width: 50%;
+  height: 8px;
 }
