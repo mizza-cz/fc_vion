@@ -1,7 +1,11 @@
 $(function () {
+  $('select').styler();
   //presmerovani pomoci selectu
   $('.select_redirect').change(function () {
     location.href = $(this).val();
+  });
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip();
   });
 
   // scroll button
