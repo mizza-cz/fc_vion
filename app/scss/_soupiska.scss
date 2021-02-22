@@ -1,5 +1,3 @@
-
-
 .soupiska__box {
   display: flex;
   flex-wrap: wrap;
@@ -58,5 +56,11 @@
   span {
     font-size: 22px;
     display: block;
+  }
+}
+
+@media (max-width: 510px) {
+  .soupiska__item {
+    width: 100%;
   }
 }
