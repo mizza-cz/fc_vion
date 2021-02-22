@@ -1,21 +1,8 @@
-.partneri-page__main-title {
-  font-size: 50px;
-  color: $red;
-  margin-bottom: 60px;
-}
+
 .partneri-page {
-  margin-top: 40px;
   text-transform: uppercase;
 }
-.partneri-page__title {
-  color: $gray;
-  font-size: 30px;
-  padding-bottom: 5px;
-  display: inline-block;
-  border-bottom: 5px solid $red;
-  margin-bottom: 30px;
-  margin-left: 40px;
-}
+
 .partneri-page__inner {
   margin-bottom: 50px;
 }
@@ -52,6 +39,7 @@
   .partneri-page__link {
     width: 300px;
     height: 200px;
+    
   }
 }
 
@@ -61,8 +49,4 @@
   }
 }
 
-@media (max-width: 480px) {
-  .partneri-page__title {
-    margin-left: 0;
-  }
-}
+
