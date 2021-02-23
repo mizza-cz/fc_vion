@@ -17,7 +17,10 @@
 @media (max-width: 1380px) {
   .clanek__title {
     font-size: 34px;
-    line-height: 40px;
+    line-height: 35px;
+  }
+  .clanek__content {
+    bottom: 40px;
   }
 }
 
@@ -902,6 +905,18 @@
 /// media 400 -------------------- --------------------  --------------------
 
 @media (max-width: 400px) {
+  .jq-selectbox__select-text::before {
+    right: 7px;
+  }
+  .jq-selectbox__select-text {
+    font-size: 16px;
+    padding: 5px 7px;
+  }
+  .jq-select-multiple li,
+  .jq-selectbox li {
+    padding-left: 5px;
+    font-size: 16px;
+  }
   .top-hrac,
   .tabl-right__ban {
     min-height: 245px;
