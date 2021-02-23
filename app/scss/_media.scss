@@ -1,0 +1,927 @@
+// responsive style
+
+/// 1500   -------------------- --------------------  --------------------
+@media (max-width: 1500px) {
+  .result__inner {
+    padding: 0 15px;
+  }
+  .team--left {
+    justify-content: flex-end;
+    .team__logo {
+      margin-left: 20px;
+    }
+  }
+}
+
+/// 1380   -------------------- --------------------  --------------------
+@media (max-width: 1380px) {
+  .clanek__title {
+    font-size: 34px;
+    line-height: 40px;
+  }
+}
+
+/// 1350   -------------------- --------------------  --------------------
+@media (max-width: 1350px) {
+  .partner-page__box {
+    justify-content: center;
+  }
+}
+/// 1342   -------------------- --------------------  --------------------
+@media (max-width: 1342px) {
+  .typo__clanek-text {
+    padding-left: 20px;
+  }
+  .typo__sprava,
+  .typo-clanek,
+  .odrazky,
+  .typo__tabl {
+    margin-left: 20px;
+  }
+  .typo-clanek__item:nth-child(odd) .typo-clanek__text {
+    margin-left: 25px;
+  }
+  .typo-clanek__item:nth-child(even) .typo-clanek__text {
+    margin-right: 10px;
+  }
+  .typo-clanek__img img {
+    width: 190px;
+  }
+  table#typo-table .tym {
+    padding-right: 35px;
+  }
+
+  .odrazky__clanek {
+    margin-right: 0;
+  }
+  .odrazky__clanek {
+    &:nth-child(odd) {
+      .odrazky__item {
+        margin-left: 20px;
+      }
+    }
+    &:nth-child(even) {
+      .odrazky__item {
+        margin-right: 20px;
+      }
+    }
+  }
+  .main__content {
+    margin-right: 35px;
+  }
+  .aside__result .result__inner {
+    padding: 0 20px;
+  }
+  .aside__clanek {
+    display: block;
+  }
+  .aside__clanek-info {
+    text-align: center;
+  }
+  .btn-clanky.btn,
+  .aside__clanek-nazev,
+  .aside__clanek img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/// 1310   -------------------- --------------------  --------------------
+@media (max-width: 1310px) {
+  .clanek__title {
+    font-size: 30px;
+  }
+}
+
+/// 1300   -------------------- --------------------  --------------------
+@media (max-width: 1300px) {
+  .calendar-team--right {
+    padding-right: 15px;
+  }
+  .calendar-team--left {
+    padding-left: 15px;
+  }
+  .calendar-date {
+    margin: 0;
+  }
+}
+
+/// 1280   -------------------- --------------------  --------------------
+@media (max-width: 1280px) {
+  .statistics__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .tabl-right {
+    display: flex;
+    max-width: 940px;
+    justify-content: space-between;
+  }
+  .top-hrac {
+    max-width: 460px;
+    margin-bottom: 0;
+  }
+  .tabl-right__ban {
+    max-height: 280px;
+  }
+}
+
+// media 1239  -------------------- --------------------  --------------------
+@media (max-width: 1239px) {
+  .partners__side {
+    max-width: 660px;
+  }
+}
+
+// media 1200  -------------------- --------------------  --------------------
+@media (max-width: 1200px) {
+  .game__club-name {
+    font-size: 40px;
+    max-width: 235px;
+  }
+  .game__club-img {
+    width: 110px;
+    height: 110px;
+  }
+  .game__result {
+    margin: 0 80px;
+  }
+}
+
+// media 1170  -------------------- --------------------  --------------------
+@media (max-width: 1170px) {
+  .clanek__img {
+    height: 460px;
+  }
+  .clanek__content {
+    top: 60%;
+    bottom: 0;
+  }
+}
+
+/// media 1100  -------------------- --------------------  --------------------
+@media (max-width: 1100px) {
+  .calendar-team--right,
+  .team--right {
+    flex-direction: column;
+    align-items: center;
+  }
+  .calendar-team--left,
+  .team--left {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .calendar-team--right .calendar-team__name {
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .calendar-team--right {
+    padding-right: 0;
+  }
+  .calendar-team--left {
+    padding-left: 0;
+  }
+  .calendar-team--left .calendar-team__name {
+    margin-right: 0;
+    text-align: center;
+    margin-top: 0;
+  }
+  .team--right .team__logo {
+    margin-right: 0;
+  }
+  .team--right .team__name {
+    text-align: center;
+  }
+  .team__name {
+    margin-top: 5px;
+  }
+  .team {
+    margin-bottom: 15px;
+  }
+  .result__inner {
+    padding: 0;
+  }
+  .result,
+  .calendar {
+    padding-bottom: 20px;
+  }
+  .team--left .team__logo {
+    margin-left: 0;
+  }
+  .team--left .team__name {
+    text-align: center;
+    margin-top: 13px;
+  }
+  .calendar-date__title {
+    margin-bottom: 15px;
+  }
+  .calendar-date__time {
+    margin-bottom: 85px;
+  }
+  .gallery img {
+    width: 200px;
+    height: 200px;
+  }
+  .aside {
+    max-width: 320px;
+  }
+  .aside__zapasy {
+    display: none;
+  }
+  .aside__submenu-link {
+    padding-left: 40px;
+    &::before {
+      left: 5px;
+    }
+  }
+}
+// media 1099 -------------------- --------------------  --------------------
+@media (max-width: 1099px) {
+  .partners__side {
+    max-width: 70%;
+  }
+  .partners__slider-link {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  .partners__inner {
+    padding-top: 75px;
+  }
+  .main__partners {
+    max-width: 100%;
+    padding-right: 15px;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .main__partners-link {
+    margin-bottom: 20px;
+  }
+}
+// media 1050  -------------------- --------------------  --------------------
+@media (max-width: 1050px) {
+  .main.main-soupiska .aside {
+    display: none;
+  }
+}
+// media 1040  -------------------- --------------------  --------------------
+@media (max-width: 1040px) {
+  .game__club--left .game__club-name {
+    margin-right: 20px;
+  }
+  .game__result {
+    margin: 0 70px;
+  }
+  .game__club--right .game__club-name {
+    margin-left: 20px;
+  }
+  .game__club-name {
+    font-size: 34px;
+    max-width: 205px;
+  }
+}
+
+// media 980  -------------------- --------------------  --------------------
+@media (max-width: 980px) {
+  .tabl-right {
+    flex-direction: column;
+    align-items: center;
+  }
+  .top-hrac {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .main__content {
+    margin-right: 0;
+    max-width: 100%;
+  }
+  .aside {
+    display: none;
+  }
+  .partner {
+    height: auto;
+  }
+}
+
+/// media 940  -------------------- --------------------  --------------------
+@media (max-width: 940px) {
+  .sestavy {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  .sestavy__club {
+    margin-bottom: 40px;
+  }
+  .sestavy__club + .sestavy__club {
+    margin-left: 0;
+  }
+}
+
+/// media 920  -------------------- --------------------  --------------------
+@media (max-width: 920px) {
+  .game__tab {
+    margin-bottom: 70px;
+  }
+  .game__club {
+    flex-direction: column;
+  }
+  .game__club--left {
+    flex-direction: column-reverse;
+  }
+  .game__club--right .game__club-name {
+    margin-left: 0;
+    text-align: center;
+  }
+  .game__club--left .game__club-name {
+    margin-right: 0;
+    text-align: center;
+  }
+}
+
+/// media 900  -------------------- --------------------  --------------------
+@media (max-width: 900px) {
+  .main.main-statistiky {
+    margin-bottom: 0;
+  }
+  .gallery img {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+/// media 889  -------------------- --------------------  --------------------
+@media (max-width: 889px) {
+  .partners__side {
+    max-width: 50%;
+  }
+}
+
+/// media 870  -------------------- --------------------  --------------------
+@media (max-width: 870px) {
+  .match__inner {
+    flex-wrap: wrap;
+    top: 0;
+    margin-bottom: 20px;
+  }
+  .result,
+  .calendar {
+    max-width: 100%;
+  }
+  .result {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+  }
+  .calendar {
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+  }
+  .calendar-date__time {
+    margin-bottom: 50px;
+  }
+  .result__inner {
+    margin-bottom: 0;
+  }
+  .clanky__inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .clanek {
+    width: 100%;
+  }
+  .clanek__img {
+    height: 350px;
+    object-position: top;
+  }
+}
+/// media 800  -------------------- --------------------  --------------------
+@media (max-width: 800px) {
+  .typo__clanek-text {
+    padding-left: 0;
+  }
+  .typo__sprava,
+  .typo-clanek,
+  .odrazky,
+  .typo__tabl,
+  .typo__albums {
+    margin-left: 0;
+  }
+  .page-title {
+    font-size: 46px;
+  }
+  .partner__inner::before {
+    width: 220px;
+  }
+  .partner {
+    .partner__inner-title {
+      font-size: 14px;
+      left: 15px;
+      top: 15px;
+    }
+  }
+  .statistiky__inner {
+    margin: 0;
+  }
+  .statistiky th,
+  .statistiky td {
+    padding-left: 15px;
+  }
+}
+/// media 780  -------------------- --------------------  --------------------
+@media (max-width: 780px) {
+  .timeline__message {
+    max-width: 200px;
+  }
+}
+
+/// media 745  -------------------- --------------------  --------------------
+@media (max-width: 745px) {
+  .typo-clanek__item:nth-child(even) .typo-clanek__text {
+    margin-right: 0;
+  }
+  .typo-clanek__item:nth-child(odd) .typo-clanek__text {
+    padding-right: 0;
+  }
+  .typo__clanek {
+    height: 450px;
+  }
+  .typo__title {
+    font-size: 36px;
+  }
+  .typo__clanek-box {
+    left: 30px;
+    bottom: 30px;
+  }
+  table#typo-table .tym {
+    width: 50px;
+    padding-right: 25px;
+    padding-left: 5px;
+  }
+  table#typo-table .zeme {
+    width: 90px;
+  }
+  .typo {
+    margin-bottom: 50px;
+  }
+  .typo__albums div {
+    margin-bottom: 20px;
+  }
+  .odrazky__item {
+    min-width: 160px;
+    height: 180px;
+  }
+  .odrazky__item-img {
+    margin-top: 15px;
+  }
+}
+
+/// media 720  -------------------- --------------------  --------------------
+@media (max-width: 720px) {
+  .clanek__content {
+    top: initial;
+    bottom: 10px;
+  }
+  .clanek__img {
+    height: 300px;
+  }
+}
+/// media 700  -------------------- --------------------  --------------------
+@media (max-width: 700px) {
+  .gallery img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/// media 680  -------------------- --------------------  --------------------
+@media (max-width: 680px) {
+  .odrazky__img {
+    height: 350px;
+  }
+  .typo__sprava {
+    padding-left: 30px;
+  }
+  .typo-clanek__img {
+    width: 170px;
+    height: 170px;
+    img {
+      width: 170px;
+    }
+  }
+  .odrazky__item {
+    min-width: 145px;
+  }
+}
+
+/// media 670  -------------------- --------------------  --------------------
+@media (max-width: 670px) {
+  .clanek__img {
+    height: 270px;
+  }
+}
+
+/// media 660  -------------------- --------------------  --------------------
+@media (max-width: 660px) {
+  .game__tab {
+    margin-bottom: 10px;
+  }
+  .game__result {
+    margin: 0 35px;
+  }
+  .game__club-name {
+    font-size: 30px;
+    max-width: 180px;
+  }
+}
+
+/// media 640  -------------------- --------------------  --------------------
+
+@media (max-width: 640px) {
+  .statistiky th,
+  .statistiky td {
+    padding-left: 10px;
+  }
+  .statistiky {
+    overflow: auto;
+    &-table {
+      width: 600px;
+    }
+  }
+  .page-title {
+    font-size: 36px;
+    margin-top: 50px;
+  }
+}
+
+// media 600  -------------------- --------------------  --------------------
+@media (max-width: 600px) {
+  .typo__title {
+    font-size: 30px;
+  }
+  .typo__clanek-box {
+    left: 25px;
+    bottom: 25px;
+  }
+  .typo__clanek {
+    height: 400px;
+  }
+  .typo__album-foto {
+    height: 370px;
+  }
+  .typo__albums div {
+    margin: 0 7px 20px;
+  }
+  .typo__albums {
+    justify-content: center;
+  }
+  .typo__tabl {
+    overflow: auto;
+  }
+  .match__inner {
+    margin-bottom: 10px;
+  }
+  .match .container {
+    padding: 0;
+  }
+  .result,
+  .calendar {
+    border-radius: 0;
+  }
+  .calendar-team--left {
+    margin-top: 37px;
+  }
+  .calendar-team--right {
+    margin-top: 50px;
+  }
+  .team--left .team__name {
+    margin-top: 17px;
+  }
+  .partners__title {
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .partners__side {
+    margin-top: 30px;
+    padding-top: 45px;
+    position: relative;
+    .partners__title {
+      top: 0;
+    }
+  }
+  .main__partners {
+    padding-right: 0;
+  }
+  .partners__inner {
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+  }
+  .partners__side {
+    text-align: center;
+    max-width: 100%;
+  }
+  .main__partners-link {
+    margin-right: 0;
+  }
+  .partner__inner::before {
+    width: 170px;
+    top: 40px;
+  }
+  .partner .container {
+    padding: 0;
+    img {
+      border-radius: 0;
+    }
+  }
+}
+
+//// media 540  -------------------- --------------------  --------------------
+@media (max-width: 540px) {
+  .game {
+    padding-top: 55px;
+  }
+  .game__club-img {
+    width: 70px;
+    height: 70px;
+  }
+  .game__club-name {
+    font-size: 24px;
+    max-width: 150px;
+  }
+  .game-tabs {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .game-tabs__tab {
+    width: 50%;
+    border: none;
+  }
+  .game-tabs__tab + .game-tabs__tab {
+    margin-left: 0;
+  }
+  .game-tabs__tab.active {
+    border-bottom: none;
+  }
+  .typo__text {
+    font-size: 22px;
+  }
+  .typo__clanek {
+    height: 380px;
+    margin-bottom: 25px;
+  }
+  .typo-clanek__item {
+    flex-direction: column;
+  }
+  .typo-clanek__img {
+    margin: 0 auto;
+  }
+  .typo-clanek__item:nth-child(odd) .typo-clanek__text {
+    margin: 0 50px;
+    text-align: center;
+  }
+  .typo-clanek__item:nth-child(even) .typo-clanek__text {
+    padding-right: 0;
+    margin: 0 50px;
+    text-align: center;
+  }
+  .typo-clanek__item:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+
+  .odrazky__clanek {
+    flex-direction: column;
+    align-items: center;
+  }
+  .odrazky__clanek:nth-child(odd) {
+    flex-direction: column-reverse;
+  }
+  .odrazky__clanek:nth-child(odd) .odrazky__item {
+    margin-left: 0;
+  }
+  .odrazky__clanek:nth-child(even) .odrazky__item {
+    margin-right: 0;
+  }
+  .odrazky__item {
+    max-width: 145px;
+  }
+  .odrazky__clanek .text-inter {
+    margin: 0 30px;
+  }
+  table#typo-table .datum,
+  table#typo-table .cas {
+    padding-right: 15px;
+  }
+}
+
+//// media 520  -------------------- --------------------  --------------------
+@media (max-width: 520px) {
+  .player {
+    padding-left: 0;
+    padding-right: 5px;
+  }
+  .soupiska__item {
+    width: 100%;
+  }
+}
+
+/// media 480 -------------------- --------------------  --------------------
+@media (max-width: 480px) {
+  .porovnani__number {
+    font-size: 28px;
+    top: 3px;
+  }
+  .game__club-name {
+    font-size: 21px;
+    max-width: 130px;
+  }
+  .game__result {
+    font-size: 35px;
+    margin: 0 10px;
+  }
+  .timeline__icon--right {
+    padding-right: 25px;
+  }
+  .timeline__icon--left {
+    padding-left: 30px;
+  }
+  .typo__clanek {
+    height: 330px;
+  }
+  .typo__album-foto,
+  .odrazky__img {
+    height: 280px;
+  }
+  .typo-clanek__item:nth-child(odd) .typo-clanek__text,
+  .typo-clanek__item:nth-child(even) .typo-clanek__text {
+    margin: 0;
+  }
+
+  .typo__sprava {
+    padding: 20px 0 20px 20px;
+  }
+  .odrazky__clanek .text-inter {
+    margin: 0;
+    text-align: center;
+  }
+  table#typo-table td {
+    font-size: 12px;
+  }
+  table#typo-table th {
+    font-size: 16px;
+  }
+  table#typo-table .tym {
+    padding-right: 15px;
+    padding-left: 0;
+  }
+  #liga table .score {
+    padding: 0 15px;
+  }
+  .statistics__inner {
+    margin-bottom: 30px;
+  }
+  .top-hrac__name {
+    font-size: 30px;
+    span {
+      font-size: 40px;
+    }
+  }
+  table#liders__table .liders__table-id {
+    font-size: 26px;
+    padding-left: 10px;
+  }
+  .top-lider__name span {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .top-lider__number {
+    font-size: 40px;
+  }
+  .tabl-liga,
+  .tabl-right,
+  .tabl-liders,
+  .tabl-right__ban,
+  .top-hrac {
+    max-width: 100%;
+  }
+  .tabl-liga,
+  .tabl-liders {
+    margin-right: 0;
+  }
+  .tabl__header {
+    padding: 0 10px;
+  }
+  #liga table .number,
+  .top-lider,
+  .tabl-tabs {
+    padding-left: 10px;
+  }
+  .calendar {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .calendar-date {
+    max-width: 160px;
+  }
+  .team .team--left {
+    margin-top: 8px;
+  }
+  .team__name,
+  .calendar-team__name {
+    font-size: 16px;
+  }
+  .calendar-team--left {
+    margin-top: 45px;
+  }
+  .clanek__img {
+    height: 250px;
+  }
+  .clanek__title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .clanek__info {
+    margin-bottom: 5px;
+  }
+  .gallery img {
+    width: 100px;
+    height: 100px;
+  }
+  .statistiky-page {
+    padding-top: 0;
+  }
+  .title {
+    margin-left: 0;
+  }
+}
+
+/// media 460 -------------------- --------------------  --------------------
+@media (max-width: 460px) {
+  .player__name {
+    max-width: 170px;
+  }
+  .player__number {
+    margin-right: 5px;
+  }
+  .player__position {
+    padding-right: 25px;
+  }
+}
+
+/// media 420 -------------------- --------------------  --------------------
+@media (max-width: 420px) {
+  .page-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+}
+
+/// media 419 -------------------- --------------------  --------------------
+
+@media (max-width: 419px) {
+  .timeline__player,
+  .timeline__message {
+    font-size: 10px;
+  }
+  .timeline__icon--left {
+    padding-right: 5px;
+  }
+  .timeline__icon--right {
+    padding-left: 5px;
+  }
+  .icon-refresh {
+    width: 15px;
+    height: 13px;
+  }
+  .icon-arrow-out,
+  .icon-arrow-in {
+    height: 10px;
+    width: 10px;
+    background-size: contain;
+  }
+}
+
+/// media 400 -------------------- --------------------  --------------------
+
+@media (max-width: 400px) {
+  .top-hrac,
+  .tabl-right__ban {
+    min-height: 245px;
+  }
+  .top-hrac__name {
+    font-size: 26px;
+    line-height: 39px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    span {
+      font-size: 36px;
+    }
+  }
+  .top-lider__img {
+    margin-right: 15px;
+  }
+  .top-lider__gols {
+    padding-right: 5px;
+  }
+  .top-hrac__content {
+    margin: 15px 15px 15px;
+  }
+}
