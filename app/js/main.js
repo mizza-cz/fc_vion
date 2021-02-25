@@ -1,7 +1,7 @@
 $(function () {
   $('select').styler();
   //presmerovani pomoci selectu
-  $('.select_redirect').change(function () {
+  $('.select__redirect').change(function () {
     location.href = $(this).val();
   });
   $(function () {

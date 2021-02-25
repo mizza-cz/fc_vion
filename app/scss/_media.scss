@@ -164,6 +164,12 @@
 
 /// media 1100  -------------------- --------------------  --------------------
 @media (max-width: 1100px) {
+  .zapasy-page__liga {
+    max-width: 130px;
+  }
+  .zapasy-page__liga img {
+    display: none;
+  }
   .calendar-team--right,
   .team--right {
     flex-direction: column;
@@ -343,6 +349,13 @@
 
 /// media 900  -------------------- --------------------  --------------------
 @media (max-width: 900px) {
+  .zapasy-page__link {
+    line-height: 20px;
+    margin-top: 5px;
+  }
+  .zapasy-page__link span {
+    display: block;
+  }
   .main.main-statistiky {
     margin-bottom: 0;
   }
@@ -479,6 +492,12 @@
 
 /// media 720  -------------------- --------------------  --------------------
 @media (max-width: 720px) {
+  .zapasy-page__num {
+    font-size: 42px;
+  }
+  .zapasy-page__typ span {
+    display: none;
+  }
   .clanek__content {
     top: initial;
     bottom: 10px;
@@ -557,6 +576,9 @@
 
 // media 600  -------------------- --------------------  --------------------
 @media (max-width: 600px) {
+  .zapasy-page__logos {
+    display: none;
+  }
   .typo__title {
     font-size: 30px;
   }
@@ -871,6 +893,18 @@
 
 /// media 420 -------------------- --------------------  --------------------
 @media (max-width: 420px) {
+  .zapasy-page__link {
+    font-size: 22px;
+    line-height: 16px;
+  }
+  .zapasy-page__liga {
+    max-width: 72px;
+  }
+  .zapasy-page__num {
+    margin-left: 0;
+    font-size: 34px;
+    max-width: 100%;
+  }
   .page-title {
     font-size: 32px;
     margin-bottom: 40px;

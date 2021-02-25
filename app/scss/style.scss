@@ -2,9 +2,83 @@
 @import 'header';
 @import 'footer';
 
-@import 'soupiska';
-
 @import 'global';
+
+/// zapasa-page start ---------------------------
+.zapasy-page {
+  margin-bottom: 50px;
+}
+.zapasy-page__select {
+  display: flex;
+  .select__redirect + .select__redirect {
+    margin-left: 50px;
+  }
+}
+.zapasy-page__box {
+  display: flex;
+}
+.zapasy-page__num {
+  max-width: 150px;
+  margin-left: 20px;
+  font-size: 50px;
+  width: 100%;
+  text-align: right;
+  &:hover {
+    text-decoration: underline;
+  }
+  color: $gray;
+  &--win {
+    color: $green;
+  }
+  &--loser {
+    color: $red;
+  }
+}
+.zapasy-page__typ {
+  color: #677177;
+}
+.zapasy-page__logos {
+  display: flex;
+  margin-right: 20px;
+  img {
+    width: 56px;
+    height: 56px;
+    display: block;
+    object-fit: cover;
+    border: 1px soid $gray;
+    border-radius: 50%;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+}
+.zapasy-page__link {
+  color: $blue;
+  font-size: 24px;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.zapasy-page__item {
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(203, 212, 217, 0.5);
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.zapasy-page__liga {
+  display: flex;
+  padding: 0 8px;
+  max-width: 300px;
+  width: 100%;
+  justify-content: flex-end;
+  img {
+    width: 48px;
+    height: 48px;
+    display: block;
+  }
+}
+
+// zapasy-page ned -----------------------------
 
 //// main start ------------------------------
 .main {
