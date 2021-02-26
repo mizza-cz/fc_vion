@@ -3,10 +3,91 @@
 @import 'footer';
 
 @import 'global';
-
+// archiv page start -----------------------------
+.archiv {
+  .aside__clanek-nazev {
+    max-width: 100%;
+    margin-bottom: 3px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__item {
+    margin: 30px 0;
+    display: flex;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(203, 212, 217, 0.5);
+  }
+  .main__content {
+    width: 100%;
+  }
+  .jq-selectbox__select {
+    padding: 6px;
+  }
+  .jq-selectbox__dropdown {
+    top: 40px !important;
+  }
+  &__img {
+    position: relative;
+    margin-right: 30px;
+    span {
+      background-color: $red;
+      padding: 3px 6px;
+      text-transform: uppercase;
+      position: absolute;
+      top: 157px;
+      left: 0;
+      border-radius: 2px;
+    }
+  }
+  &__img img {
+    width: 254px;
+    height: 169px;
+    display: block;
+  }
+}
+.archiv__search {
+  width: 100%;
+  border-bottom: 1px solid rgba(203, 212, 217, 0.5);
+  &-input {
+    max-width: 525px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid $red;
+    padding: 10px 10px 10px 12px;
+    &:focus {
+      border: 1px solid $red;
+      outline: none;
+    }
+  }
+}
+.archiv__filtr {
+  display: flex;
+  justify-content: space-between;
+  width: 525px;
+}
+.btn-search {
+  outline: none;
+  height: 40px;
+  padding: 4px 8px;
+  display: inline-block;
+  width: 120px;
+  border: 1px solid $red;
+  transition: all 0.4s;
+  cursor: pointer;
+  font-size: 16px;
+  &:hover {
+    background-color: $red;
+    color: #fff;
+  }
+}
+//archiv page end ---------------------------------
 /// zapasa-page start ---------------------------
 .zapasy-page {
   margin-bottom: 50px;
+  .title {
+    margin-left: 0;
+  }
 }
 .zapasy-page__select {
   display: flex;
@@ -64,6 +145,7 @@
   margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .zapasy-page__liga {
   display: flex;
@@ -78,7 +160,7 @@
   }
 }
 
-// zapasy-page ned -----------------------------
+// zapasy-page end -----------------------------
 
 //// main start ------------------------------
 .main {
@@ -228,6 +310,39 @@
   }
   .result__title {
     padding-left: 11px;
+  }
+}
+.info-box {
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+  &__img {
+    width: 44px;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+  &__link {
+    font-size: 16px;
+    color: $blue;
+  }
+  &__row {
+    text-align: right;
+  }
+  &__name {
+    color: #424951;
+    font-size: 22px;
+    line-height: 22px;
+    display: block;
+    margin-bottom: 5px;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 

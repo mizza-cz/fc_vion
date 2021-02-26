@@ -164,6 +164,9 @@
 
 /// media 1100  -------------------- --------------------  --------------------
 @media (max-width: 1100px) {
+  .info-box {
+    display: none;
+  }
   .zapasy-page__liga {
     max-width: 130px;
   }
@@ -508,6 +511,24 @@
 }
 /// media 700  -------------------- --------------------  --------------------
 @media (max-width: 700px) {
+  .archiv__img span {
+    top: auto;
+    bottom: 0;
+    transform: translateY(50%);
+  }
+  .archiv__item {
+    flex-wrap: wrap;
+  }
+  .archiv__img {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 20px;
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+    }
+  }
   .gallery img {
     width: 120px;
     height: 120px;
@@ -558,6 +579,15 @@
 /// media 640  -------------------- --------------------  --------------------
 
 @media (max-width: 640px) {
+  .zapasy-page__select .select__redirect + .select__redirect {
+    margin-left: 0;
+  }
+  .zapasy-page__select {
+    flex-direction: column-reverse;
+    .select__redirect {
+      margin-bottom: 30px;
+    }
+  }
   .statistiky th,
   .statistiky td {
     padding-left: 10px;
@@ -656,6 +686,24 @@
     img {
       border-radius: 0;
     }
+  }
+}
+
+//// media 560  -------------------- --------------------  --------------------
+@media (max-width: 560px) {
+  .btn-search {
+    width: 100%;
+  }
+  .archiv__search {
+    padding-bottom: 20px;
+  }
+  .archiv__filtr {
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+  .archiv .select__redirect {
+    max-width: 100%;
+    margin-bottom: 15px;
   }
 }
 
@@ -950,6 +998,10 @@
   .jq-selectbox li {
     padding-left: 5px;
     font-size: 16px;
+  }
+  .archiv .jq-select-multiple li,
+  .jq-selectbox li {
+    padding-left: 10px;
   }
   .top-hrac,
   .tabl-right__ban {

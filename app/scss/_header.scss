@@ -44,7 +44,7 @@
   padding-top: 83px;
   margin-right: 35px;
   position: relative;
-  z-index: 15;
+  z-index: 99;
 }
 .nav__logo-link {
   img {
@@ -140,6 +140,7 @@
   top: 70px;
   left: 0;
   text-transform: none;
+  z-index: 22;
 }
 
 /// media
