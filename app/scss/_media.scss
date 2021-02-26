@@ -12,6 +12,12 @@
     }
   }
 }
+/// 1420   -------------------- --------------------  --------------------
+@media (max-width: 1420px) {
+  .zapasy-page__liga {
+    max-width: 200px;
+  }
+}
 
 /// 1380   -------------------- --------------------  --------------------
 @media (max-width: 1380px) {
@@ -26,6 +32,12 @@
 
 /// 1350   -------------------- --------------------  --------------------
 @media (max-width: 1350px) {
+  .zapasy-page__liga {
+    max-width: 130px;
+  }
+  .zapasy-page__liga img {
+    display: none;
+  }
   .partner-page__box {
     justify-content: center;
   }
@@ -167,12 +179,7 @@
   .info-box {
     display: none;
   }
-  .zapasy-page__liga {
-    max-width: 130px;
-  }
-  .zapasy-page__liga img {
-    display: none;
-  }
+
   .calendar-team--right,
   .team--right {
     flex-direction: column;
