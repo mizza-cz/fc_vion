@@ -359,6 +359,18 @@
 
 /// media 900  -------------------- --------------------  --------------------
 @media (max-width: 900px) {
+  .form-gallery {
+    flex-wrap: wrap;
+    justify-content: end;
+    .input {
+      max-width: 590px;
+      margin-right: 30px;
+      margin-bottom: 15px;
+    }
+    .btn-search {
+      margin-left: 30px;
+    }
+  }
   .zapasy-page__link {
     line-height: 20px;
     margin-top: 5px;
@@ -421,6 +433,10 @@
 }
 /// media 800  -------------------- --------------------  --------------------
 @media (max-width: 800px) {
+  .gallery-page__item {
+    max-width: 50%;
+    flex: 0 50%;
+  }
   .typo__clanek-text {
     padding-left: 0;
   }
@@ -571,6 +587,16 @@
 
 /// media 660  -------------------- --------------------  --------------------
 @media (max-width: 660px) {
+  .form-gallery .btn-search {
+    margin-left: 0;
+  }
+  .form-gallery {
+    justify-content: space-between;
+  }
+  .form-gallery .input {
+    max-width: 100%;
+    margin-right: 0;
+  }
   .game__tab {
     margin-bottom: 10px;
   }
@@ -613,6 +639,16 @@
 
 // media 600  -------------------- --------------------  --------------------
 @media (max-width: 600px) {
+  .form-gallery {
+    padding-bottom: 15px;
+  }
+  .gallery-page .select__redirect {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+  .form-gallery .btn-search {
+    max-width: 100%;
+  }
   .zapasy-page__logos {
     display: none;
   }
@@ -805,6 +841,18 @@
 
 /// media 480 -------------------- --------------------  --------------------
 @media (max-width: 480px) {
+  .gallery-page__item {
+    flex: 100%;
+    max-width: 370px;
+  }
+  .gallery-page__inner {
+    justify-content: center;
+  }
+  .gallery-page {
+    .page-title {
+      margin-bottom: 20px;
+    }
+  }
   .porovnani__number {
     font-size: 28px;
     top: 3px;

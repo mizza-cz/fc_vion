@@ -65,7 +65,21 @@ body {
     red 100px
   );
 }
-
+.input {
+  width: 100%;
+  border: 1px solid $red;
+  padding: 10px 10px 10px 12px;
+  border-radius: 2px;
+  &:focus {
+    border: 1px solid $red;
+    outline: none;
+  }
+}
+.form {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(203, 212, 217, 0.5);
+}
 .btn {
   width: 72px;
   background-color: #fff;

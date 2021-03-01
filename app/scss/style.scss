@@ -3,6 +3,82 @@
 @import 'footer';
 
 @import 'global';
+
+// gallery page start ----------------------------
+.gallery-page {
+  &__box {
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    height: 100%;
+  }
+  &__item {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+
+    margin-bottom: 30px;
+    padding: 10px;
+    &-info {
+      padding: 8px;
+      padding-bottom: 15px;
+    }
+    .aside__clanek-datum {
+      margin-bottom: 0;
+      margin-top: 5px;
+    }
+
+    .aside__clanek-nazev {
+      max-width: 100%;
+      font-size: 22px;
+      line-height: 24px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    a {
+      display: block;
+      img {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        width: 100%;
+        display: block;
+        max-height: 189px;
+        object-fit: cover;
+      }
+    }
+  }
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  .main__content {
+    width: 100%;
+  }
+  .btn-search {
+    max-width: 280px;
+    width: 100%;
+  }
+  .select__redirect {
+    max-width: 280px;
+    border-radius: 2px;
+  }
+  .jq-selectbox__select-text::before {
+    top: 9px;
+  }
+  .input {
+    max-width: 280px;
+    padding: 10px 10px 10px 12px;
+    height: 40px;
+  }
+  .jq-selectbox__select-text {
+    padding: 10px 15px;
+  }
+  .jq-selectbox__dropdown {
+    top: 40px !important;
+  }
+}
+// gallery page end ------------------------------
 // archiv page start -----------------------------
 .archiv {
   .aside__clanek-nazev {
@@ -51,14 +127,7 @@
   border-bottom: 1px solid rgba(203, 212, 217, 0.5);
   &-input {
     max-width: 525px;
-    width: 100%;
     margin-bottom: 15px;
-    border: 1px solid $red;
-    padding: 10px 10px 10px 12px;
-    &:focus {
-      border: 1px solid $red;
-      outline: none;
-    }
   }
 }
 .archiv__filtr {
