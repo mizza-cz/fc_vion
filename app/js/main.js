@@ -95,6 +95,20 @@ $(function () {
     return false;
   });
 
+  // tabs team
+  $('.mladez-team__tabs .mladez-team__menu-list').on('click', function (event) {
+    var id = $(this).attr('data-id');
+    $('.mladez-team__tabs').find('.mladez__content').removeClass('tab-active').hide();
+    $('.mladez-team__tabs .mladez-team__menu')
+      .find('.mladez-team__menu-list')
+      .removeClass('active');
+    $(this).addClass('active');
+    $('#' + id)
+      .addClass('tab-active')
+      .fadeIn();
+    return false;
+  });
+
   // gallery
   var _gallery_loading = false;
 

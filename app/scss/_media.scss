@@ -128,9 +128,8 @@
     justify-content: center;
   }
   .tabl-right {
-    display: flex;
+    @include jcsb;
     max-width: 940px;
-    justify-content: space-between;
   }
   .top-hrac {
     max-width: 460px;
@@ -150,6 +149,13 @@
 
 // media 1200  -------------------- --------------------  --------------------
 @media (max-width: 1200px) {
+  .mladez__table th,
+  .mladez__table td {
+    padding-left: 10px;
+  }
+  .mladez__table .num {
+    padding-left: 15px;
+  }
   .game__club-name {
     font-size: 40px;
     max-width: 235px;
@@ -302,6 +308,10 @@
 
 // media 980  -------------------- --------------------  --------------------
 @media (max-width: 980px) {
+  .mladez .main__content .aside__submenu {
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
   .tabl-right {
     flex-direction: column;
     align-items: center;
@@ -612,6 +622,12 @@
 /// media 640  -------------------- --------------------  --------------------
 
 @media (max-width: 640px) {
+  .mladez__table .vaha {
+    width: 50px;
+  }
+  .mladez__realizacn .mladez__table {
+    width: 100%;
+  }
   .zapasy-page__select .select__redirect + .select__redirect {
     margin-left: 0;
   }
@@ -634,6 +650,23 @@
   .page-title {
     font-size: 36px;
     margin-top: 50px;
+  }
+  .mladez-table {
+    overflow: auto;
+  }
+  .mladez__table {
+    width: 600px;
+  }
+  .mladez .main__content .aside__submenu {
+    margin-left: 0;
+  }
+  .menicko span {
+    display: block;
+    margin: 0;
+  }
+  .menicko__link {
+    margin-left: 0;
+    margin-right: 15px;
   }
 }
 
@@ -841,6 +874,16 @@
 
 /// media 480 -------------------- --------------------  --------------------
 @media (max-width: 480px) {
+  .mladez-team__menu-list {
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  .mladez__realizacn .mladez__table {
+    width: 480px;
+  }
+  .mladez-submenu__menu {
+    text-align: center;
+  }
   .gallery-page__item {
     flex: 100%;
     max-width: 370px;

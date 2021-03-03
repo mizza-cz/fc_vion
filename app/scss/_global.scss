@@ -76,8 +76,7 @@ body {
   }
 }
 .form {
-  display: flex;
-  justify-content: space-between;
+  @include jcsb;
   border-bottom: 1px solid rgba(203, 212, 217, 0.5);
 }
 .btn {
@@ -290,4 +289,11 @@ body {
       fill: #fff;
     }
   }
+}
+
+.btn.btn-link {
+  background-color: #eb1a13;
+  color: #fff;
+  width: 120px;
+  margin-left: auto;
 }

@@ -4,6 +4,211 @@
 
 @import 'global';
 
+/// mladez and zeny sekce --------------------
+.vysledek {
+  text-align: center;
+  .match {
+    font-size: 20px;
+    font-weight: bold;
+    &--win {
+      color: $green;
+    }
+    &--loser {
+      color: $red;
+    }
+  }
+}
+.menicko {
+  background-color: #ccc8c8;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.menicko__link {
+  color: #40403f;
+  text-decoration: underline;
+  margin-left: 15px;
+  font-size: 16px;
+  &:hover,
+  &.active {
+    text-decoration: none;
+  }
+}
+
+.bottom-title {
+  color: #424951;
+  font-size: 30px;
+  line-height: 22px;
+}
+.bottom__link {
+  font-size: 24px;
+  color: #40403f;
+}
+.mladez__table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 40px;
+  .post {
+    width: 40px;
+    text-align: center;
+  }
+  .num {
+    width: 50px;
+  }
+  .vyska,
+  .vaha,
+  .narozen {
+    text-align: right;
+  }
+  th a {
+    text-decoration: underline;
+    color: #40403f;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  td {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .name a {
+    font-weight: 700;
+    font-size: 16px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  th,
+  td {
+    border-bottom: 1px solid #e7eaef;
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+  th {
+    color: #40403f;
+    background-color: #ccc8c8;
+    font-size: 18px;
+    line-height: 14px;
+  }
+}
+.mladez {
+  .title {
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+  &__img {
+    margin-top: 20px;
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+  .main__content {
+    width: 100%;
+    .aside__submenu {
+      max-width: 400px;
+      margin-left: auto;
+    }
+    .aside__clanek-nazev {
+      max-width: 100%;
+    }
+  }
+}
+.mladez__content {
+  display: none;
+}
+.mladez__content.tab-active {
+  display: block;
+}
+.mladez-team__menu-list {
+  margin-left: 15px;
+  display: inline-block;
+  &.active .mladez-team__menu-link {
+    text-decoration: none;
+  }
+}
+.mladez-team__menu-link {
+  text-decoration: underline;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 8px;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.mladez__team {
+  display: none;
+  margin-top: 10px;
+  &.tab-active {
+    display: block;
+  }
+}
+.mladez-team__tabs {
+  display: block;
+  font-size: 18px;
+  line-height: 20px;
+  align-items: center;
+  color: $red;
+  span {
+    margin: 0 5px;
+  }
+}
+.mladez-team__menu {
+  display: inline-block;
+}
+
+.mladez-submenu__list {
+  display: inline-block;
+  margin-right: 6px;
+  margin-bottom: 8px;
+  &.active .mladez-submenu__link {
+    background-color: $red;
+    color: #fff;
+  }
+}
+.mladez-submenu__link {
+  font-size: 18px;
+  padding: 0 8px;
+  border-radius: 4px;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  transition: all 0.6s;
+  box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+  &.active {
+    background-color: $red;
+    color: #fff;
+    &:hover {
+      background-color: $red;
+      color: #fff;
+    }
+  }
+  &:hover {
+    background-color: $gray;
+    color: #fff;
+  }
+}
+.mladez__title {
+  margin-bottom: 20px;
+  color: #424951;
+  font-size: 24px;
+  line-height: 22px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 50px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(203, 212, 217, 0.5);
+}
+
+/// mladez and zeny sekce end ---------------------
+
 // gallery page start ----------------------------
 .gallery-page {
   &__box {
@@ -114,6 +319,7 @@
       top: 157px;
       left: 0;
       border-radius: 2px;
+      margin: 0;
     }
   }
   &__img img {
@@ -128,11 +334,12 @@
   &-input {
     max-width: 525px;
     margin-bottom: 15px;
+    width: 100%;
+    height: 40px;
   }
 }
 .archiv__filtr {
-  display: flex;
-  justify-content: space-between;
+  @include jcsb;
   width: 525px;
 }
 .btn-search {
@@ -215,8 +422,7 @@
   padding-bottom: 15px;
   border-bottom: 1px solid rgba(203, 212, 217, 0.5);
   margin-bottom: 30px;
-  display: flex;
-  justify-content: space-between;
+  @include jcsb;
   align-items: center;
 }
 .zapasy-page__liga {
@@ -387,9 +593,8 @@
 .info-box {
   margin-top: 20px;
   padding: 20px;
-  display: flex;
   align-items: center;
-  justify-content: space-between;
+  @include jcsb;
   box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
   &__img {
     width: 44px;
@@ -632,8 +837,7 @@ table#typo-table {
     }
   }
   &__clanek {
-    display: flex;
-    justify-content: space-between;
+    @include jcsb;
     margin-right: 13px;
     margin-bottom: 32px;
     &:nth-child(odd) {
@@ -714,9 +918,8 @@ table#typo-table {
   width: 100%;
 }
 .typo__albums {
-  display: flex;
+  @include jcsb;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin-left: 3px;
   max-width: 860px;
   div {
@@ -843,9 +1046,7 @@ table#typo-table {
     margin-bottom: 32px;
   }
   &__link {
-    display: flex;
-    display: flex;
-    justify-content: space-between;
+    @include jcsb;
     max-width: 162px;
     width: 100%;
   }
@@ -936,8 +1137,7 @@ table#typo-table {
   align-items: center;
   margin-top: 17px;
   padding: 0 30px;
-  display: flex;
-  justify-content: space-between;
+  @include jcsb;
   .tabl__subtitle-link {
     color: $red;
   }
@@ -1639,10 +1839,9 @@ table#liders__table {
   font-family: 'Inter', sans-serif;
 }
 .player__name {
-  display: flex;
+  @include jcsb;
   width: 100%;
   max-width: 245px;
-  justify-content: space-between;
 }
 .card-yellow {
   width: 18px;

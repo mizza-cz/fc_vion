@@ -9,3 +9,7 @@ $yellow: #ebcd13;
   background-repeat: no-repeat;
   background-position: center;
 }
+@mixin jcsb {
+  display: flex;
+  justify-content: space-between;
+}

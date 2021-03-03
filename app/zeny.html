@@ -79,13 +79,13 @@
                 <div class="header__menu-dropdown user-menu catalog-podmenu">
                   <ul class="menu-list">
                     <li>
-                      <a class="header__menu-font" href="#">Súpiska</a>
+                      <a class="header__menu-font" href="soupiska.html">Súpiska</a>
                     </li>
                     <li>
                       <a class="header__menu-font" href="#">Realizačný tím</a>
                     </li>
                     <li>
-                      <a class="header__menu-font" href="#">Zápasy</a>
+                      <a class="header__menu-font" href="zapasy.html">Zápasy</a>
                     </li>
                     <li>
                       <a class="header__menu-font" href="#">Tabuľka</a>
@@ -101,10 +101,10 @@
                 <div class="header__menu-dropdown user-menu catalog-podmenu">
                   <ul class="menu-list">
                     <li>
-                      <a class="header__menu-font" href="#">Mládež</a>
+                      <a class="header__menu-font" href="mladez.html">Mládež</a>
                     </li>
                     <li>
-                      <a class="header__menu-font" href="#">Ženy</a>
+                      <a class="header__menu-font" href="zeny.html">Ženy</a>
                     </li>
                     <li>
                       <a class="header__menu-font" href="#">Futbalová akadémia PFA</a>
@@ -127,7 +127,7 @@
                 <a class="menu__list-category" href="partneri.html"> Partneri </a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__list-category" href="#"> Galéria </a>
+                <a class="menu__list-category" href="fotogallery.html"> Galéria </a>
               </li>
               <li class="menu__list-item">
                 <a class="menu__list-category" href="#"> Vstupenky </a>
@@ -200,237 +200,568 @@
       </div>
     </header>
     <!-- header end -->
-
-    <main class="main archiv">
+    <main class="main mladez">
       <div class="container">
         <div class="main__inner">
           <div class="main__content">
-            <h1 class="page-title">Archív správ</h1>
-            <div class="archiv__inner">
-              <div class="archiv__search">
-                <input
-                  class="archiv__search-input input text-inter"
-                  type="text"
-                  name="text"
-                  placeholder="hľadaný text"
-                />
-                <div class="archiv__filtr">
-                  <select class="select__redirect" name="kategorie">
-                    <option value="">Aktuality</option>
-                    <option value="">Rozhovor</option>
-                    <option value="">Tlačová správa</option>
-                    <option value="">Klub</option>
-                    <option value="">Zápas</option>
-                    <option value="">Fanúšikovia</option>
-                    <option value="">Video</option>
-                    <option value="">Foto</option>
-                    <option value="">Preview</option>
-                    <option value="">Ohlasy</option>
-                  </select>
-                  <select class="select__redirect" name="sezona" id="sezona">
-                    <option>2020/2021</option>
-                    <option>2019/2020</option>
-                    <option>2018/2019</option>
-                    <option>2017/2018</option>
-                  </select>
-                  <button class="btn btn-search" type="submit">Vyhľadať</button>
+            <div class="mladez__title">ROZCESTNÍK ŽENSKÁ SEKCE</div>
+            <div class="mladez-submenu">
+              <ul class="mladez-submenu__menu">
+                <li class="mladez-submenu__list active">
+                  <a class="mladez-submenu__link" href="#">Ženy</a>
+                </li>
+                <li class="mladez-submenu__list">
+                  <a class="mladez-submenu__link" href="#">Juniorky</a>
+                </li>
+                <li class="mladez-submenu__list">
+                  <a class="mladez-submenu__link" href="#">Žačky</a>
+                </li>
+              </ul>
+              <div class="mladez__team tab-active">
+                <div class="mladez-team__tabs">
+                  Tým <span>Ženy</span>
+                  <ul class="mladez-team__menu">
+                    <li class="mladez-team__menu-list active" data-id="2">
+                      <a class="mladez-team__menu-link" href="#">Aktuality</a>
+                    </li>
+
+                    <li class="mladez-team__menu-list" data-id="3">
+                      <a class="mladez-team__menu-link" href="#">Súpiska</a>
+                    </li>
+                    <li class="mladez-team__menu-list" data-id="4">
+                      <a class="mladez-team__menu-link" href="#">Realizačný tím</a>
+                    </li>
+                    <li class="mladez-team__menu-list" data-id="5">
+                      <a class="mladez-team__menu-link" href="#">Výsledky</a>
+                    </li>
+                  </ul>
+
+                  <!-- aktuality -->
+                  <div class="mladez__content tab-active" id="2">
+                    <div class="mladez__img">
+                      <img src="images/content/vion-club.jpeg" alt="" />
+                    </div>
+                    <div class="archiv__item">
+                      <a class="archiv__img" href="#">
+                        <img src="images/content/clanky1.jpg" alt="" />
+                        <span>rozhovor</span>
+                      </a>
+                      <div class="archiv__content">
+                        <a class="aside__clanek-nazev" href="#">
+                          Video: Čo je nové so zranenými hráčmi?
+                        </a>
+                        <div class="aside__clanek-datum">pred 3 dnami</div>
+                        <p class="text-inter">
+                          Kalmár a Davis v tréningu, návrat Vidu s Friedem na dobrej ceste. Okrem
+                          fotoaparátu sme si na dnešný tréning zobrali aj videokameru a zisťovali
+                          sme, ako to vyzerá s návratom zranených hráčov.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="archiv__item">
+                      <a class="archiv__img" href="#">
+                        <img src="images/content/clanky1.jpg" alt="" />
+                        <span>rozhovor</span>
+                      </a>
+                      <div class="archiv__content">
+                        <a class="aside__clanek-nazev" href="#">
+                          Video: Čo je nové so zranenými hráčmi?
+                        </a>
+                        <div class="aside__clanek-datum">včera</div>
+                        <p class="text-inter">
+                          Kalmár a Davis v tréningu, návrat Vidu s Friedem na dobrej ceste. Okrem
+                          fotoaparátu sme si na dnešný tréning zobrali aj videokameru a zisťovali
+                          sme, ako to vyzerá s návratom zranených hráčov.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="archiv__item">
+                      <a class="archiv__img" href="#">
+                        <img src="images/content/clanky1.jpg" alt="" />
+                        <span>rozhovor</span>
+                      </a>
+                      <div class="archiv__content">
+                        <a class="aside__clanek-nazev" href="#">
+                          Video: Čo je nové so zranenými hráčmi?
+                        </a>
+                        <div class="aside__clanek-datum">včera</div>
+                        <p class="text-inter">
+                          Kalmár a Davis v tréningu, návrat Vidu s Friedem na dobrej ceste. Okrem
+                          fotoaparátu sme si na dnešný tréning zobrali aj videokameru a zisťovali
+                          sme, ako to vyzerá s návratom zranených hráčov.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="archiv__item">
+                      <a class="archiv__img" href="#">
+                        <img src="images/content/clanky1.jpg" alt="" />
+                        <span>rozhovor</span>
+                      </a>
+                      <div class="archiv__content">
+                        <a class="aside__clanek-nazev" href="#">
+                          Video: Čo je nové so zranenými hráčmi?
+                        </a>
+                        <div class="aside__clanek-datum">včera</div>
+                        <p class="text-inter">
+                          Kalmár a Davis v tréningu, návrat Vidu s Friedem na dobrej ceste. Okrem
+                          fotoaparátu sme si na dnešný tréning zobrali aj videokameru a zisťovali
+                          sme, ako to vyzerá s návratom zranených hráčov.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="archiv__item">
+                      <a class="archiv__img" href="#">
+                        <img src="images/content/clanky1.jpg" alt="" />
+                        <span>rozhovor</span>
+                      </a>
+                      <div class="archiv__content">
+                        <a class="aside__clanek-nazev" href="#">
+                          Video: Čo je nové so zranenými hráčmi?
+                        </a>
+                        <div class="aside__clanek-datum">včera</div>
+                        <p class="text-inter">
+                          Kalmár a Davis v tréningu, návrat Vidu s Friedem na dobrej ceste. Okrem
+                          fotoaparátu sme si na dnešný tréning zobrali aj videokameru a zisťovali
+                          sme, ako to vyzerá s návratom zranených hráčov.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="archiv__item">
+                      <a class="archiv__img" href="#">
+                        <img src="images/content/clanky1.jpg" alt="" />
+                        <span>rozhovor</span>
+                      </a>
+                      <div class="archiv__content">
+                        <a class="aside__clanek-nazev" href="#">
+                          Video: Čo je nové so zranenými hráčmi?
+                        </a>
+                        <div class="aside__clanek-datum">včera</div>
+                        <p class="text-inter">
+                          Kalmár a Davis v tréningu, návrat Vidu s Friedem na dobrej ceste. Okrem
+                          fotoaparátu sme si na dnešný tréning zobrali aj videokameru a zisťovali
+                          sme, ako to vyzerá s návratom zranených hráčov.
+                        </p>
+                      </div>
+                    </div>
+                    <a class="btn btn-link" href="archiv.html">Archiv článků</a>
+                  </div>
+                  <!-- soupiska -->
+                  <div class="mladez__content" id="3">
+                    <h1 class="page-title">Soupiska U19 2020/2021</h1>
+                    <h3 class="title">Brankári</h3>
+                    <div class="mladez-table">
+                      <table class="mladez__table">
+                        <tr>
+                          <th class="num"><a href="#">#</a></th>
+                          <th class="post"><a href="#">Post</a></th>
+                          <th class="name"><a href="#">Jméno</a></th>
+                          <th class="narozen"><a href="#">Narozen</a></th>
+                          <th class="vyska"><a href="#">výška</a></th>
+                          <th class="vaha"><a href="#">váha</a></th>
+                        </tr>
+                        <tr>
+                          <td class="num">1</td>
+                          <td class="post"><a href="#">B</a></td>
+                          <td class="name"><a href="#">Jméno Příjmení</a></td>
+                          <td class="narozen">31.12.2000</td>
+                          <td class="vyska"></td>
+                          <td class="vaha"></td>
+                        </tr>
+                        <tr>
+                          <td class="num">2</td>
+                          <td class="post"><a href="#">B</a></td>
+                          <td class="name"><a href="#">Jméno Příjmení</a></td>
+                          <td class="narozen">31.12.2000</td>
+                          <td class="vyska"></td>
+                          <td class="vaha"></td>
+                        </tr>
+                        <tr>
+                          <td class="num">3</td>
+                          <td class="post"><a href="#">B</a></td>
+                          <td class="name"><a href="#">Jméno Příjmení</a></td>
+                          <td class="narozen">31.12.2000</td>
+                          <td class="vyska"></td>
+                          <td class="vaha"></td>
+                        </tr>
+                      </table>
+                    </div>
+
+                    <h3 class="title">Obránci</h3>
+                    <div class="mladez-table">
+                      <table class="mladez__table">
+                        <tr>
+                          <th class="num"><a href="#">#</a></th>
+                          <th class="post"><a href="#">Post</a></th>
+                          <th class="name"><a href="#">Jméno</a></th>
+                          <th class="narozen"><a href="#">Narozen</a></th>
+                          <th class="vyska"><a href="#">výška</a></th>
+                          <th class="vaha"><a href="#">váha</a></th>
+                        </tr>
+                        <tr>
+                          <td class="num">1</td>
+                          <td class="post"><a href="#">O</a></td>
+                          <td class="name"><a href="#">Jméno Příjmení</a></td>
+                          <td class="narozen">31.12.2000</td>
+                          <td class="vyska"></td>
+                          <td class="vaha"></td>
+                        </tr>
+                        <tr>
+                          <td class="num">2</td>
+                          <td class="post"><a href="#">O</a></td>
+                          <td class="name"><a href="#">Jméno Příjmení</a></td>
+                          <td class="narozen">31.12.2000</td>
+                          <td class="vyska"></td>
+                          <td class="vaha"></td>
+                        </tr>
+                        <tr>
+                          <td class="num">3</td>
+                          <td class="post"><a href="#">O</a></td>
+                          <td class="name"><a href="#">Jméno Příjmení</a></td>
+                          <td class="narozen">31.12.2000</td>
+                          <td class="vyska"></td>
+                          <td class="vaha"></td>
+                        </tr>
+                        <tr>
+                          <td class="num">1</td>
+                          <td class="post"><a href="#">O</a></td>
+                          <td class="name"><a href="#">Jméno Příjmení</a></td>
+                          <td class="narozen">31.12.2000</td>
+                          <td class="vyska"></td>
+                          <td class="vaha"></td>
+                        </tr>
+                        <tr>
+                          <td class="num">2</td>
+                          <td class="post"><a href="#">O</a></td>
+                          <td class="name"><a href="#">Jméno Příjmení</a></td>
+                          <td class="narozen">31.12.2000</td>
+                          <td class="vyska"></td>
+                          <td class="vaha"></td>
+                        </tr>
+                        <tr>
+                          <td class="num">3</td>
+                          <td class="post"><a href="#">O</a></td>
+                          <td class="name"><a href="#">Jméno Příjmení</a></td>
+                          <td class="narozen">31.12.2000</td>
+                          <td class="vyska"></td>
+                          <td class="vaha"></td>
+                        </tr>
+                      </table>
+                    </div>
+
+                    <h3 class="title">Záložníci</h3>
+                    <div class="mladez-table">
+                      <table class="mladez__table">
+                        <tr>
+                          <th class="num"><a href="#">#</a></th>
+                          <th class="post"><a href="#">Post</a></th>
+                          <th class="name"><a href="#">Jméno</a></th>
+                          <th class="narozen"><a href="#">Narozen</a></th>
+                          <th class="vyska"><a href="#">výška</a></th>
+                          <th class="vaha"><a href="#">váha</a></th>
+                        </tr>
+                        <tr>
+                          <td class="num">1</td>
+                          <td class="post"><a href="#">Z</a></td>
+                          <td class="name"><a href="#">Jméno Příjmení</a></td>
+                          <td class="narozen">31.12.2000</td>
+                          <td class="vyska"></td>
+                          <td class="vaha"></td>
+                        </tr>
+                        <tr>
+                          <td class="num">2</td>
+                          <td class="post"><a href="#">Z</a></td>
+                          <td class="name"><a href="#">Jméno Příjmení</a></td>
+                          <td class="narozen">31.12.2000</td>
+                          <td class="vyska"></td>
+                          <td class="vaha"></td>
+                        </tr>
+                        <tr>
+                          <td class="num">3</td>
+                          <td class="post"><a href="#">Z</a></td>
+                          <td class="name"><a href="#">Jméno Příjmení</a></td>
+                          <td class="narozen">31.12.2000</td>
+                          <td class="vyska"></td>
+                          <td class="vaha"></td>
+                        </tr>
+                        <tr>
+                          <td class="num">1</td>
+                          <td class="post"><a href="#">Z</a></td>
+                          <td class="name"><a href="#">Jméno Příjmení</a></td>
+                          <td class="narozen">31.12.2000</td>
+                          <td class="vyska"></td>
+                          <td class="vaha"></td>
+                        </tr>
+                        <tr>
+                          <td class="num">2</td>
+                          <td class="post"><a href="#">Z</a></td>
+                          <td class="name"><a href="#">Jméno Příjmení</a></td>
+                          <td class="narozen">31.12.2000</td>
+                          <td class="vyska"></td>
+                          <td class="vaha"></td>
+                        </tr>
+                        <tr>
+                          <td class="num">2</td>
+                          <td class="post"><a href="#">Z</a></td>
+                          <td class="name"><a href="#">Jméno Příjmení</a></td>
+                          <td class="narozen">31.12.2000</td>
+                          <td class="vyska"></td>
+                          <td class="vaha"></td>
+                        </tr>
+                        <tr>
+                          <td class="num">2</td>
+                          <td class="post"><a href="#">Z</a></td>
+                          <td class="name"><a href="#">Jméno Příjmení</a></td>
+                          <td class="narozen">31.12.2000</td>
+                          <td class="vyska"></td>
+                          <td class="vaha"></td>
+                        </tr>
+                        <tr>
+                          <td class="num">3</td>
+                          <td class="post"><a href="#">Z</a></td>
+                          <td class="name"><a href="#">Jméno Příjmení</a></td>
+                          <td class="narozen">31.12.2000</td>
+                          <td class="vyska"></td>
+                          <td class="vaha"></td>
+                        </tr>
+                      </table>
+                    </div>
+
+                    <h3 class="title">Útočníci</h3>
+                    <div class="mladez-table">
+                      <table class="mladez__table">
+                        <tr>
+                          <th class="num"><a href="#">#</a></th>
+                          <th class="post"><a href="#">Post</a></th>
+                          <th class="name"><a href="#">Jméno</a></th>
+                          <th class="narozen"><a href="#">Narozen</a></th>
+                          <th class="vyska"><a href="#">výška</a></th>
+                          <th class="vaha"><a href="#">váha</a></th>
+                        </tr>
+                        <tr>
+                          <td class="num">1</td>
+                          <td class="post"><a href="#">U</a></td>
+                          <td class="name"><a href="#">Jméno Příjmení</a></td>
+                          <td class="narozen">31.12.2000</td>
+                          <td class="vyska"></td>
+                          <td class="vaha"></td>
+                        </tr>
+                        <tr>
+                          <td class="num">2</td>
+                          <td class="post"><a href="#">U</a></td>
+                          <td class="name"><a href="#">Jméno Příjmení</a></td>
+                          <td class="narozen">31.12.2000</td>
+                          <td class="vyska"></td>
+                          <td class="vaha"></td>
+                        </tr>
+                        <tr>
+                          <td class="num">1</td>
+                          <td class="post"><a href="#">U</a></td>
+                          <td class="name"><a href="#">Jméno Příjmení</a></td>
+                          <td class="narozen">31.12.2000</td>
+                          <td class="vyska"></td>
+                          <td class="vaha"></td>
+                        </tr>
+                        <tr>
+                          <td class="num">2</td>
+                          <td class="post"><a href="#">U</a></td>
+                          <td class="name"><a href="#">Jméno Příjmení</a></td>
+                          <td class="narozen">31.12.2000</td>
+                          <td class="vyska"></td>
+                          <td class="vaha"></td>
+                        </tr>
+                        <tr>
+                          <td class="num">3</td>
+                          <td class="post"><a href="#">U</a></td>
+                          <td class="name"><a href="#">Jméno Příjmení</a></td>
+                          <td class="narozen">31.12.2000</td>
+                          <td class="vyska"></td>
+                          <td class="vaha"></td>
+                        </tr>
+                      </table>
+                    </div>
+
+                    <div class="aside__submenu">
+                      <h5 class="aside__title">Další sezóny</h5>
+                      <ul class="aside__submenu-list">
+                        <li>
+                          <a class="aside__submenu-link active" href="#">Soupiska 2020/2021</a>
+                        </li>
+                        <li><a class="aside__submenu-link" href="#">Soupiska 2019/2020</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- realizacni tym -->
+                  <div class="mladez__content" id="4">
+                    <h1 class="page-title">Realizační tým</h1>
+                    <div class="mladez-table mladez__realizacn">
+                      <table class="mladez__table">
+                        <tr>
+                          <th class="item">Pozice</th>
+                          <th class="item">Jméno</th>
+                          <th class="item">Email</th>
+                        </tr>
+                        <tr>
+                          <td class="item">Hlavní trenér:</td>
+                          <td class="item">Jméno Příjmení</td>
+                          <td class="item">vion@gmail.com</td>
+                        </tr>
+                        <tr>
+                          <td class="item">Asistent trenéra:</td>
+                          <td class="item">Jméno Příjmení</td>
+                          <td class="item">vion@gmail.com</td>
+                        </tr>
+                        <tr>
+                          <td class="item">Kondiční trenér:</td>
+                          <td class="item">Jméno Příjmení</td>
+                          <td class="item">vion@gmail.com</td>
+                        </tr>
+                        <tr>
+                          <td class="item">Trenér brankařů:</td>
+                          <td class="item">Jméno Příjmení</td>
+                          <td class="item">vion@gmail.com</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <!-- vysledky -->
+                  <div class="mladez__content" id="5">
+                    <h1 class="page-title">Liga název</h1>
+                    <div class="menicko">
+                      <span>Zobrazení:</span>
+                      <a class="menicko__link" href="#">jen výsledky</a>
+                      <a class="menicko__link" href="#">statistiky</a>
+                      <a class="menicko__link" href="#">pouze doma</a>
+                      <a class="menicko__link" href="#">pouze venku</a>
+                      <a class="menicko__link active" href="#">vše</a>
+                    </div>
+                    <div class="mladez-table">
+                      <table class="mladez__table">
+                        <tr>
+                          <th class="num">kolo</th>
+                          <th class="date">datum</th>
+                          <th class="domaci">domácí</th>
+                          <th class="hoste">hosté</th>
+                          <th class="vysledek"></th>
+                        </tr>
+                        <tr>
+                          <td class="num">1</td>
+                          <td class="date">pá 21.8.2020</td>
+                          <td class="domaci">FC ViOn Zlaté Moravce</td>
+                          <td class="hoste">FK Trenčín</td>
+                          <td class="vysledek">15:00</td>
+                        </tr>
+                        <tr>
+                          <td class="num">2</td>
+                          <td class="date">pá 21.8.2020</td>
+                          <td class="domaci">FK Senica</td>
+                          <td class="hoste">FC ViOn Zlaté Moravce</td>
+                          <td class="vysledek"><a class="match match--win" href="#">1:3</a></td>
+                        </tr>
+                        <tr>
+                          <td class="num">3</td>
+                          <td class="date">pá 21.8.2020</td>
+                          <td class="domaci">FC ViOn Zlaté Moravce</td>
+                          <td class="hoste">FK Trenčín</td>
+                          <td class="vysledek"><a class="match match--loser" href="#">2:4</a></td>
+                        </tr>
+                        <tr>
+                          <td class="num">4</td>
+                          <td class="date">pá 21.8.2020</td>
+                          <td class="domaci">FC ViOn Zlaté Moravce</td>
+                          <td class="hoste">FK Trenčín</td>
+                          <td class="vysledek">11:00</td>
+                        </tr>
+                        <tr>
+                          <td class="num">5</td>
+                          <td class="date">pá 21.8.2020</td>
+                          <td class="domaci">FC Nitra</td>
+                          <td class="hoste">FC ViOn Zlaté Moravce</td>
+                          <td class="vysledek"><a class="match match--loser" href="#">3:1</a></td>
+                        </tr>
+                        <tr>
+                          <td class="num">6</td>
+                          <td class="date">pá 21.8.2020</td>
+                          <td class="domaci">FC Nitra</td>
+                          <td class="hoste">FC ViOn Zlaté Moravce</td>
+                          <td class="vysledek"><a class="match match--loser" href="#">1:0</a></td>
+                        </tr>
+                        <tr>
+                          <td class="num">7</td>
+                          <td class="date">pá 21.8.2020</td>
+                          <td class="domaci">FC Nitra</td>
+                          <td class="hoste">FC ViOn Zlaté Moravce</td>
+                          <td class="vysledek">13:00</td>
+                        </tr>
+                        <tr>
+                          <td class="num">8</td>
+                          <td class="date">pá 21.8.2020</td>
+                          <td class="domaci">FC ViOn Zlaté Moravce</td>
+                          <td class="hoste">FC Dac 1904</td>
+                          <td class="vysledek">11:00</td>
+                        </tr>
+                        <tr>
+                          <td class="num">9</td>
+                          <td class="date">pá 21.8.2020</td>
+                          <td class="domaci">FC Spartak Trnava</td>
+                          <td class="hoste">FC ViOn Zlaté Moravce</td>
+                          <td class="vysledek"><a class="match match--win" href="#">1:3</a></td>
+                        </tr>
+                        <tr>
+                          <td class="num">10</td>
+                          <td class="date">pá 21.8.2020</td>
+                          <td class="domaci">FC ViOn Zlaté Moravce</td>
+                          <td class="hoste">FC Dac 1904</td>
+                          <td class="vysledek"><a class="match match--win" href="#">3:2</a></td>
+                        </tr>
+                        <tr>
+                          <td class="num">11</td>
+                          <td class="date">pá 21.8.2020</td>
+                          <td class="domaci">FC ViOn Zlaté Moravce</td>
+                          <td class="hoste">FC Spartak Trnava</td>
+                          <td class="vysledek">12:00</td>
+                        </tr>
+                        <tr>
+                          <td class="num">12</td>
+                          <td class="date">pá 21.8.2020</td>
+                          <td class="domaci">FC Spartak Trnava</td>
+                          <td class="hoste">FC ViOn Zlaté Moravce</td>
+                          <td class="vysledek">17:00</td>
+                        </tr>
+                        <tr>
+                          <td class="num">13</td>
+                          <td class="date">pá 21.8.2020</td>
+                          <td class="domaci">FC ViOn Zlaté Moravce</td>
+                          <td class="hoste">FC Dac 1904</td>
+                          <td class="vysledek">17:00</td>
+                        </tr>
+                        <tr>
+                          <td class="num">14</td>
+                          <td class="date">pá 21.8.2020</td>
+                          <td class="domaci">FK Pohronie</td>
+                          <td class="hoste">FC ViOn Zlaté Moravce</td>
+                          <td class="vysledek">16:00</td>
+                        </tr>
+                        <tr>
+                          <td class="num">15</td>
+                          <td class="date">pá 21.8.2020</td>
+                          <td class="domaci">Slovan Bratislava</td>
+                          <td class="hoste">FC ViOn Zlaté Moravce</td>
+                          <td class="vysledek win"><a class="match match--win" href="#">0:2</a></td>
+                        </tr>
+                      </table>
+                    </div>
+
+                    <div class="aside__submenu">
+                      <h5 class="aside__title">Další sezóny</h5>
+                      <ul class="aside__submenu-list">
+                        <li>
+                          <a class="aside__submenu-link active" href="#">Liga 2020/2021</a>
+                        </li>
+                        <li><a class="aside__submenu-link" href="#">Liga 2019/2020</a></li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="archiv__item">
-                <a class="archiv__img" href="#">
-                  <img src="images/content/clanky1.jpg" alt="" />
-                  <span>rozhovor</span>
-                </a>
-                <div class="archiv__content">
-                  <a class="aside__clanek-nazev" href="#">
-                    Video: Čo je nové so zranenými hráčmi?
-                  </a>
-                  <div class="aside__clanek-datum">včera</div>
-                  <p class="text-inter">
-                    Kalmár a Davis v tréningu, návrat Vidu s Friedem na dobrej ceste. Okrem
-                    fotoaparátu sme si na dnešný tréning zobrali aj videokameru a zisťovali sme, ako
-                    to vyzerá s návratom zranených hráčov.
-                  </p>
-                </div>
-              </div>
-              <div class="archiv__item">
-                <a class="archiv__img" href="#">
-                  <img src="images/content/clanky1.jpg" alt="" />
-                  <span>Foto</span>
-                </a>
-                <div class="archiv__content">
-                  <a class="aside__clanek-nazev" href="#">
-                    Foto: Dnešný tréning (24. februára 2021)
-                  </a>
-                  <div class="aside__clanek-datum">nedeľa 21.2.</div>
-                  <p class="text-inter">
-                    Kalmár a Davis v tréningu, návrat Vidu s Friedem na dobrej ceste. Okrem
-                    fotoaparátu sme si na dnešný tréning zobrali aj videokameru a zisťovali sme, ako
-                    to vyzerá s návratom zranených hráčov.
-                  </p>
-                </div>
-              </div>
-              <div class="archiv__item">
-                <a class="archiv__img" href="#">
-                  <img src="images/content/clanky1.jpg" alt="" />
-                  <span>aktuality</span>
-                </a>
-                <div class="archiv__content">
-                  <a class="aside__clanek-nazev" href="#"> Nadstavbu odštartujeme doma </a>
-                  <div class="aside__clanek-datum">nedeľa 21.2.</div>
-                  <p class="text-inter">
-                    Kalmár a Davis v tréningu, návrat Vidu s Friedem na dobrej ceste. Okrem
-                    fotoaparátu sme si na dnešný tréning zobrali aj videokameru a zisťovali sme, ako
-                    to vyzerá s návratom zranených hráčov.
-                  </p>
-                </div>
-              </div>
-              <div class="archiv__item">
-                <a class="archiv__img" href="#">
-                  <img src="images/content/clanky1.jpg" alt="" />
-                  <span>rozhovor</span>
-                </a>
-                <div class="archiv__content">
-                  <a class="aside__clanek-nazev" href="#">
-                    Video: Čo je nové so zranenými hráčmi?
-                  </a>
-                  <div class="aside__clanek-datum">pred 3 dnami</div>
-                  <p class="text-inter">
-                    Kalmár a Davis v tréningu, návrat Vidu s Friedem na dobrej ceste. Okrem
-                    fotoaparátu sme si na dnešný tréning zobrali aj videokameru a zisťovali sme, ako
-                    to vyzerá s návratom zranených hráčov.
-                  </p>
-                </div>
-              </div>
-              <div class="archiv__item">
-                <a class="archiv__img" href="#">
-                  <img src="images/content/clanky1.jpg" alt="" />
-                  <span>rozhovor</span>
-                </a>
-                <div class="archiv__content">
-                  <a class="aside__clanek-nazev" href="#">
-                    Video: Čo je nové so zranenými hráčmi?
-                  </a>
-                  <div class="aside__clanek-datum">včera</div>
-                  <p class="text-inter">
-                    Kalmár a Davis v tréningu, návrat Vidu s Friedem na dobrej ceste. Okrem
-                    fotoaparátu sme si na dnešný tréning zobrali aj videokameru a zisťovali sme, ako
-                    to vyzerá s návratom zranených hráčov.
-                  </p>
-                </div>
-              </div>
-              <div class="archiv__item">
-                <a class="archiv__img" href="#">
-                  <img src="images/content/clanky1.jpg" alt="" />
-                  <span>rozhovor</span>
-                </a>
-                <div class="archiv__content">
-                  <a class="aside__clanek-nazev" href="#">
-                    Video: Čo je nové so zranenými hráčmi?
-                  </a>
-                  <div class="aside__clanek-datum">včera</div>
-                  <p class="text-inter">
-                    Kalmár a Davis v tréningu, návrat Vidu s Friedem na dobrej ceste. Okrem
-                    fotoaparátu sme si na dnešný tréning zobrali aj videokameru a zisťovali sme, ako
-                    to vyzerá s návratom zranených hráčov.
-                  </p>
-                </div>
-              </div>
-              <div class="archiv__item">
-                <a class="archiv__img" href="#">
-                  <img src="images/content/clanky1.jpg" alt="" />
-                  <span>rozhovor</span>
-                </a>
-                <div class="archiv__content">
-                  <a class="aside__clanek-nazev" href="#">
-                    Video: Čo je nové so zranenými hráčmi?
-                  </a>
-                  <div class="aside__clanek-datum">včera</div>
-                  <p class="text-inter">
-                    Kalmár a Davis v tréningu, návrat Vidu s Friedem na dobrej ceste. Okrem
-                    fotoaparátu sme si na dnešný tréning zobrali aj videokameru a zisťovali sme, ako
-                    to vyzerá s návratom zranených hráčov.
-                  </p>
-                </div>
-              </div>
-              <div class="archiv__item">
-                <a class="archiv__img" href="#">
-                  <img src="images/content/clanky1.jpg" alt="" />
-                  <span>rozhovor</span>
-                </a>
-                <div class="archiv__content">
-                  <a class="aside__clanek-nazev" href="#">
-                    Video: Čo je nové so zranenými hráčmi?
-                  </a>
-                  <div class="aside__clanek-datum">včera</div>
-                  <p class="text-inter">
-                    Kalmár a Davis v tréningu, návrat Vidu s Friedem na dobrej ceste. Okrem
-                    fotoaparátu sme si na dnešný tréning zobrali aj videokameru a zisťovali sme, ako
-                    to vyzerá s návratom zranených hráčov.
-                  </p>
-                </div>
-              </div>
-              <div class="archiv__item">
-                <a class="archiv__img" href="#">
-                  <img src="images/content/clanky1.jpg" alt="" />
-                  <span>rozhovor</span>
-                </a>
-                <div class="archiv__content">
-                  <a class="aside__clanek-nazev" href="#">
-                    Video: Čo je nové so zranenými hráčmi?
-                  </a>
-                  <div class="aside__clanek-datum">včera</div>
-                  <p class="text-inter">
-                    Kalmár a Davis v tréningu, návrat Vidu s Friedem na dobrej ceste. Okrem
-                    fotoaparátu sme si na dnešný tréning zobrali aj videokameru a zisťovali sme, ako
-                    to vyzerá s návratom zranených hráčov.
-                  </p>
-                </div>
-              </div>
-              <div class="archiv__item">
-                <a class="archiv__img" href="#">
-                  <img src="images/content/clanky1.jpg" alt="" />
-                  <span>rozhovor</span>
-                </a>
-                <div class="archiv__content">
-                  <a class="aside__clanek-nazev" href="#">
-                    Video: Čo je nové so zranenými hráčmi?
-                  </a>
-                  <div class="aside__clanek-datum">včera</div>
-                  <p class="text-inter">
-                    Kalmár a Davis v tréningu, návrat Vidu s Friedem na dobrej ceste. Okrem
-                    fotoaparátu sme si na dnešný tréning zobrali aj videokameru a zisťovali sme, ako
-                    to vyzerá s návratom zranených hráčov.
-                  </p>
-                </div>
-              </div>
-              <div class="pagination">
-                <ul class="pagination__list">
-                  <li><a class="active" href="#">1</a></li>
-                  <li><a href="#">2</a></li>
-                  <li><a href="#">3</a></li>
-                  <li><a href="#">4</a></li>
-                  <li><a href="#">5</a></li>
-                </ul>
-                <a class="pagination-next" href="#">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="15"
-                    height="10"
-                    viewBox="0 0 15 10"
-                  >
-                    <g fill="none" fill-rule="evenodd">
-                      <g fill="#000" fill-rule="nonzero">
-                        <g>
-                          <path
-                            d="M8.115 8.013l1.939-1.616c.071-.06.092-.15.053-.227-.038-.078-.13-.128-.23-.128H2C1.31 6.042.75 5.575.75 5S1.31 3.958 2 3.958h7.879c.101 0 .193-.05.231-.128.04-.078.018-.168-.054-.228L8.117 1.986c-.488-.407-.488-1.066 0-1.473.488-.406 1.28-.406 1.767 0l4.5 3.75c.234.196.366.46.366.737 0 .276-.132.54-.366.736l-4.5 3.75c-.488.406-1.28.406-1.767 0-.488-.407-.488-1.066 0-1.473h-.002z"
-                            transform="translate(-298 -2781) translate(298 2781)"
-                          />
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
-                </a>
               </div>
             </div>
           </div>

@@ -4,9 +4,8 @@
 .header__inner {
   padding: 0 20px;
   height: 70px;
-  display: flex;
+  @include jcsb;
   align-items: center;
-  justify-content: space-between;
   width: 100%;
 }
 .header__logo {
@@ -61,8 +60,7 @@
   margin-right: 10px;
 }
 .menu__list {
-  display: flex;
-  justify-content: space-between;
+  @include jcsb;
   align-items: center;
   margin: 0 auto;
   &-item {
