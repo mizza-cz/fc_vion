@@ -14,6 +14,12 @@
 }
 /// 1420   -------------------- --------------------  --------------------
 @media (max-width: 1420px) {
+  .player__arrow--left {
+    left: 15px;
+  }
+  .player__arrow--right {
+    right: 15px;
+  }
   .zapasy-page__liga {
     max-width: 200px;
   }
@@ -44,6 +50,16 @@
 }
 /// 1342   -------------------- --------------------  --------------------
 @media (max-width: 1342px) {
+  .hrac__clanky {
+    flex: 0 60%;
+  }
+  .hrac__gallery .title {
+    margin-bottom: 20px;
+  }
+  .hrac__gallery-item {
+    flex: 0 50%;
+    padding: 5px;
+  }
   .typo__clanek-text {
     padding-left: 20px;
   }
@@ -149,6 +165,17 @@
 
 // media 1200  -------------------- --------------------  --------------------
 @media (max-width: 1200px) {
+  .hrac__gallery-item {
+    flex: 0 0 25%;
+  }
+  .hrac__gallery,
+  .hrac__clanky {
+    flex: 100%;
+    margin-left: 0;
+  }
+  .hrac-content__inner {
+    flex-wrap: wrap;
+  }
   .mladez__table th,
   .mladez__table td {
     padding-left: 10px;
@@ -285,6 +312,29 @@
 }
 // media 1050  -------------------- --------------------  --------------------
 @media (max-width: 1050px) {
+  .hrac__name {
+    font-size: 50px;
+    line-height: 50px;
+    span {
+      font-size: 70px;
+      line-height: 70px;
+    }
+  }
+  .hrac__info {
+    margin-left: 30px;
+  }
+  .hrac__position {
+    margin-left: 0;
+  }
+  .hrac__inner {
+    height: auto;
+  }
+  .hrac__img {
+    max-width: 360px;
+    img {
+      display: block;
+    }
+  }
   .main.main-soupiska .aside {
     display: none;
   }
@@ -308,7 +358,6 @@
 
 // media 980  -------------------- --------------------  --------------------
 @media (max-width: 980px) {
- 
   .tabl-right {
     flex-direction: column;
     align-items: center;
@@ -331,6 +380,41 @@
 
 /// media 940  -------------------- --------------------  --------------------
 @media (max-width: 940px) {
+  .hrac__info {
+    margin-top: 100px;
+  }
+  .player__arrow {
+    display: none;
+  }
+  .hrac .container {
+    padding: 0;
+  }
+  .hrac__img {
+    max-width: 100%;
+  }
+  .hrac__info {
+    width: 92%;
+  }
+
+  .hrac-content__text {
+    margin: 0 20px 20px 20px;
+  }
+  .hrac-content {
+    margin: 50px 0 0;
+  }
+  .hrac__info {
+    margin-left: 0;
+    margin-top: 60px;
+  }
+  .player__arrow {
+    top: 30%;
+  }
+  .hrac__inner {
+    padding-bottom: 30px;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
   .sestavy {
     flex-wrap: wrap;
     margin-bottom: 40px;
@@ -440,6 +524,9 @@
 }
 /// media 800  -------------------- --------------------  --------------------
 @media (max-width: 800px) {
+  .hrac__gallery-item {
+    flex: 0 0 33.333%;
+  }
   .gallery-page__item {
     max-width: 50%;
     flex: 0 50%;
@@ -541,6 +628,14 @@
 }
 /// media 700  -------------------- --------------------  --------------------
 @media (max-width: 700px) {
+  .hrac-content {
+    .statistiky {
+      overflow: auto;
+    }
+    .statistiky-table {
+      width: 700px;
+    }
+  }
   .archiv__img span {
     top: auto;
     bottom: 0;
@@ -619,6 +714,16 @@
 /// media 640  -------------------- --------------------  --------------------
 
 @media (max-width: 640px) {
+  .hrac .container {
+    padding: 0;
+  }
+  .hrac__img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .hrac__gallery-item {
+    flex: 0 50%;
+  }
   .mladez__table .vaha {
     width: 50px;
   }
@@ -654,7 +759,7 @@
   .mladez__table {
     width: 600px;
   }
- 
+
   .menicko span {
     display: block;
     margin: 0;
@@ -869,6 +974,9 @@
 
 /// media 480 -------------------- --------------------  --------------------
 @media (max-width: 480px) {
+  .hrac__gallery-item {
+    flex: 100%;
+  }
   .mladez-team__menu-list {
     margin-left: 4px;
     margin-right: 4px;
@@ -1021,6 +1129,16 @@
 
 /// media 460 -------------------- --------------------  --------------------
 @media (max-width: 460px) {
+  .hrac__info {
+    padding: 0 20px;
+    max-width: 100%;
+  }
+  .hrac__num {
+    margin-left: 0;
+  }
+  .hrac__info-top {
+    flex-direction: column-reverse;
+  }
   .player__name {
     max-width: 170px;
   }

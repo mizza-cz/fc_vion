@@ -108,10 +108,7 @@
   }
   .main__content {
     width: 100%;
-    .aside__submenu {
-      max-width: 400px;
-      margin-left: auto;
-    }
+
     .aside__clanek-nazev {
       max-width: 100%;
     }
@@ -2213,4 +2210,217 @@ table#liders__table {
   }
 }
 // soupiska page end -------------------------------------------------
+
+/// hrac-page
+.player__arrow {
+  width: 33px;
+  height: 50px;
+  position: absolute;
+  top: 49%;
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  &--left {
+    left: 0;
+  }
+  &--right {
+    right: 0;
+    transform: rotate(180deg);
+  }
+}
+.hrac {
+  background-color: $gray;
+
+  &__inner {
+    display: flex;
+    height: 600px;
+    justify-content: center;
+    position: relative;
+  }
+  &__img {
+    max-width: 420px;
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__info {
+    margin-left: 50px;
+    margin-top: 100px;
+    &-top {
+      display: flex;
+      border-bottom: 1px solid #4a5062;
+      padding-bottom: 22px;
+    }
+  }
+  &__position {
+    text-transform: uppercase;
+    background-color: #eb1a13;
+    display: inline-block;
+    margin-left: 7px;
+    padding: 10px 15px 7px 15px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    font-size: 32px;
+  }
+  &__name {
+    font-size: 60px;
+    line-height: 60px;
+
+    span {
+      font-size: 80px;
+      line-height: 80px;
+      display: block;
+    }
+  }
+  &__num {
+    font-size: 120px;
+    margin-left: 60px;
+  }
+  &__list {
+    margin-top: 50px;
+    li {
+      font-size: 22px;
+      font-family: 'Inter', sans-serif;
+      line-height: 32px;
+      font-weight: 400;
+    }
+  }
+}
+.hrac-content {
+  color: $gray;
+  margin: 50px 50px 0 50px;
+  &__text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    max-width: 900px;
+    margin: 0 auto 20px;
+    span {
+      font-weight: 700;
+    }
+  }
+}
+
+.hrac-content {
+  .title {
+    margin-top: 50px;
+    margin-left: 0;
+  }
+  &__title {
+    margin-bottom: 20px;
+    color: #424951;
+    font-size: 24px;
+    line-height: 22px;
+    text-transform: uppercase;
+  }
+  td a:hover {
+    text-decoration: underline;
+  }
+  td a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: $red;
+    font-size: 14px;
+  }
+  td {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
+.hrac-content__link {
+  text-transform: uppercase;
+  background-color: #eb1a13;
+  display: block;
+  margin: 0 auto 30px;
+  padding: 10px 15px 7px 15px;
+  border-radius: 8px;
+  font-size: 24px;
+  max-width: 234px;
+  transition: all 0.5s;
+  border: 1px solid transparent;
+  &:hover {
+    background-color: #fff;
+    color: $red;
+    border: 1px solid $red;
+  }
+}
+.hrac-content__inner {
+  display: flex;
+  margin-bottom: 30px;
+  .btn {
+    margin-top: 20px;
+    background-color: #eb1a13;
+    color: #fff;
+    width: 140px;
+  }
+}
+.hrac__gallery {
+  flex: 0 50%;
+  .title,
+  .btn {
+    margin-left: 10px;
+  }
+  .title {
+    margin-bottom: 15px;
+  }
+  &-inner {
+    flex-wrap: wrap;
+    display: flex;
+  }
+  &-item {
+    flex: 0 0 33%;
+    padding: 10px;
+    .img {
+      display: block;
+
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        background-image: url('../images/svg/ico-camera.svg');
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: 40px 35px;
+        background-position: center center;
+        background-color: rgba(235, 26, 19, 0.6);
+        border-radius: 10px;
+        opacity: 0;
+        transition: all 0.5s;
+      }
+      &:hover {
+        &::before {
+          opacity: 0.9;
+        }
+      }
+    }
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 10px;
+    }
+  }
+}
+.hrac__clanky {
+  flex: 0 50%;
+  margin-left: 20px;
+  .title {
+    margin-bottom: 0;
+  }
+}
 @import 'media';
+
+
+
