@@ -2256,6 +2256,7 @@ table#liders__table {
       display: flex;
       border-bottom: 1px solid #4a5062;
       padding-bottom: 22px;
+      align-items: center;
     }
   }
   &__position {
@@ -2266,42 +2267,56 @@ table#liders__table {
     padding: 10px 15px 7px 15px;
     margin-bottom: 30px;
     border-radius: 8px;
-    font-size: 32px;
+    font-size: 28px;
   }
   &__name {
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 50px;
+    line-height: 50px;
 
     span {
-      font-size: 80px;
-      line-height: 80px;
+      font-size: 70px;
+      line-height: 70px;
       display: block;
     }
   }
   &__num {
-    font-size: 120px;
+    font-size: 140px;
+    line-height: 0;
     margin-left: 60px;
   }
   &__list {
     margin-top: 50px;
     li {
-      font-size: 22px;
+      font-size: 21px;
       font-family: 'Inter', sans-serif;
       line-height: 32px;
       font-weight: 400;
+
+      img {
+        width: 30px;
+        height: 20px;
+        object-fit: cover;
+        margin-left: 10px;
+      }
     }
   }
 }
 .hrac-content {
   color: $gray;
-  margin: 50px 50px 0 50px;
-  &__text {
+  margin: 0px 50px 0 50px;
+  &__row {
+    border-bottom: 1px solid #4a5062;
+    padding-bottom: 30px;
+    max-width: 900px;
+    margin: 0 auto;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
-    max-width: 900px;
-    margin: 0 auto 20px;
+  }
+  &__text {
+    margin-bottom: 20px;
+
     span {
       font-weight: 700;
     }
@@ -2363,21 +2378,21 @@ table#liders__table {
   }
 }
 .hrac__gallery {
-  flex: 0 50%;
+  flex: 0 55%;
   .title,
   .btn {
     margin-left: 10px;
   }
   .title {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
   &-inner {
     flex-wrap: wrap;
     display: flex;
   }
   &-item {
-    flex: 0 0 33%;
-    padding: 10px;
+    flex: 0 0 33.333%;
+    padding: 7px;
     .img {
       display: block;
 
@@ -2414,13 +2429,55 @@ table#liders__table {
   }
 }
 .hrac__clanky {
-  flex: 0 50%;
+  flex: 0 45%;
   margin-left: 20px;
+  .btn {
+    margin-top: 45px;
+  }
   .title {
     margin-bottom: 0;
   }
 }
+
+//// hrac-final
+.hrac-content__tabs {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.hrac-tabs {
+  padding: 15px 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.15);
+  margin-bottom: 58px;
+}
+.hrac-tabs__tab.active {
+  color: #eb1a13;
+  border-bottom: 3px solid #eb1a13;
+}
+.hrac-tabs__tab + .hrac-tabs__tab {
+  margin-left: 50px;
+}
+.hrac-tabs__tab {
+  font-size: 21px;
+  text-transform: uppercase;
+  color: #2c2c2c;
+  padding-bottom: 12px;
+  border-bottom: 3px solid transparent;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+  &:hover {
+    color: #eb1a13;
+    border-bottom: 3px solid #eb1a13;
+  }
+}
+.hrac-tabs__content {
+  display: none;
+}
+.hrac-tabs__content.active-tab {
+  display: block;
+}
 @import 'media';
-
-
-

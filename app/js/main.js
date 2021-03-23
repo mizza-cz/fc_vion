@@ -30,6 +30,19 @@ $(function () {
     return false;
   });
 
+  // hrac-tabs
+
+  $('.hrac-content__tabs .hrac-tabs__tab').on('click', function (event) {
+    var id = $(this).attr('data-id');
+    $('.hrac-content__tabs').find('.hrac-tabs__content').removeClass('active-tab').hide();
+    $('.hrac-content__tabs .hrac-tabs').find('.hrac-tabs__tab').removeClass('active');
+    $(this).addClass('active');
+    $('#' + id)
+      .addClass('active-tab')
+      .fadeIn();
+    return false;
+  });
+
   // header menu
   $('.menu__btn').on('click', function () {
     $('.menu__list').slideToggle();
