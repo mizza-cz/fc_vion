@@ -2304,28 +2304,31 @@ table#liders__table {
   color: $gray;
   margin: 0px 50px 0 50px;
   &__row {
-    border-bottom: 1px solid #4a5062;
-    padding-bottom: 30px;
-    max-width: 900px;
-    margin: 0 auto;
+    color: #000;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 16px;
+    line-height: 28px;
   }
+
   &__text {
     margin-bottom: 20px;
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
 
     span {
-      font-weight: 700;
+      font-weight: 600;
     }
   }
 }
 
 .hrac-content {
   .title {
-    margin-top: 50px;
     margin-left: 0;
+    margin-top: 20px;
   }
   &__title {
     margin-bottom: 20px;
@@ -2389,6 +2392,7 @@ table#liders__table {
     flex-wrap: wrap;
     display: flex;
   }
+
   &-item {
     flex: 0 0 33.333%;
     padding: 7px;
@@ -2449,7 +2453,7 @@ table#liders__table {
   padding: 15px 0;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.15);
-  margin-bottom: 58px;
+  margin-bottom: 30px;
 }
 .hrac-tabs__tab.active {
   color: #eb1a13;
