@@ -12,6 +12,7 @@
     }
   }
 }
+
 /// 1420   -------------------- --------------------  --------------------
 @media (max-width: 1420px) {
   .player__arrow--left {
@@ -209,6 +210,27 @@
 
 /// media 1100  -------------------- --------------------  --------------------
 @media (max-width: 1100px) {
+  .hrac__name {
+    font-size: 50px;
+    line-height: 50px;
+    span {
+      font-size: 70px;
+      line-height: 70px;
+    }
+  }
+  .hrac__info {
+    margin-left: 30px;
+  }
+
+  .hrac__inner {
+    height: auto;
+  }
+  .hrac__img {
+    max-width: 360px;
+    img {
+      display: block;
+    }
+  }
   .info-box {
     display: none;
   }
@@ -312,35 +334,47 @@
 }
 // media 1050  -------------------- --------------------  --------------------
 @media (max-width: 1050px) {
-  .hrac__name {
-    font-size: 50px;
-    line-height: 50px;
-    span {
-      font-size: 70px;
-      line-height: 70px;
-    }
-  }
-  .hrac__info {
-    margin-left: 30px;
-  }
-  .hrac__position {
-    margin-left: 0;
-  }
-  .hrac__inner {
-    height: auto;
-  }
-  .hrac__img {
-    max-width: 360px;
-    img {
-      display: block;
-    }
-  }
   .main.main-soupiska .aside {
     display: none;
   }
 }
 // media 1040  -------------------- --------------------  --------------------
 @media (max-width: 1040px) {
+  .hrac__info {
+    margin-top: 100px;
+  }
+  .player__arrow {
+    display: none;
+  }
+  .hrac .container {
+    padding: 0;
+  }
+  .hrac__img {
+    max-width: 100%;
+  }
+  .hrac__info {
+    width: 92%;
+  }
+
+  .hrac-content__text {
+    margin: 0 20px 20px 20px;
+  }
+  .hrac-content {
+    margin: 50px 0 0;
+  }
+  .hrac__info {
+    margin-left: 0;
+    margin-top: 60px;
+  }
+  .player__arrow {
+    top: 30%;
+  }
+  .hrac__inner {
+    padding-bottom: 30px;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
   .game__club--left .game__club-name {
     margin-right: 20px;
   }
@@ -380,41 +414,6 @@
 
 /// media 940  -------------------- --------------------  --------------------
 @media (max-width: 940px) {
-  .hrac__info {
-    margin-top: 100px;
-  }
-  .player__arrow {
-    display: none;
-  }
-  .hrac .container {
-    padding: 0;
-  }
-  .hrac__img {
-    max-width: 100%;
-  }
-  .hrac__info {
-    width: 92%;
-  }
-
-  .hrac-content__text {
-    margin: 0 20px 20px 20px;
-  }
-  .hrac-content {
-    margin: 50px 0 0;
-  }
-  .hrac__info {
-    margin-left: 0;
-    margin-top: 60px;
-  }
-  .player__arrow {
-    top: 30%;
-  }
-  .hrac__inner {
-    padding-bottom: 30px;
-    flex-direction: column;
-    height: auto;
-    align-items: center;
-  }
   .sestavy {
     flex-wrap: wrap;
     margin-bottom: 40px;
@@ -772,6 +771,9 @@
 
 // media 600  -------------------- --------------------  --------------------
 @media (max-width: 600px) {
+  .hrac__list li span {
+    display: block;
+  }
   .form-gallery {
     padding-bottom: 15px;
   }
@@ -1129,15 +1131,23 @@
 
 /// media 460 -------------------- --------------------  --------------------
 @media (max-width: 460px) {
+  .hrac-tabs__tab + .hrac-tabs__tab {
+    margin-left: 30px;
+  }
+  .hrac-content__tabs {
+    padding: 0;
+  }
   .hrac__info {
     padding: 0 20px;
     max-width: 100%;
   }
   .hrac__num {
     margin-left: 0;
+    line-height: 1;
   }
   .hrac__info-top {
     flex-direction: column-reverse;
+    align-items: start;
   }
   .player__name {
     max-width: 170px;
