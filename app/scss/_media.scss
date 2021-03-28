@@ -51,6 +51,9 @@
 }
 /// 1342   -------------------- --------------------  --------------------
 @media (max-width: 1342px) {
+  .typo__wrapper {
+    padding-left: 25px;
+  }
   .hrac__clanky {
     flex: 0 60%;
   }
@@ -61,43 +64,11 @@
     flex: 0 50%;
     padding: 5px;
   }
-  .typo__clanek-text {
-    padding-left: 20px;
-  }
-  .typo__sprava,
-  .typo-clanek,
-  .odrazky,
-  .typo__tabl {
-    margin-left: 20px;
-  }
-  .typo-clanek__item:nth-child(odd) .typo-clanek__text {
-    margin-left: 25px;
-  }
-  .typo-clanek__item:nth-child(even) .typo-clanek__text {
-    margin-right: 10px;
-  }
-  .typo-clanek__img img {
-    width: 190px;
-  }
+
   table#typo-table .tym {
     padding-right: 35px;
   }
 
-  .odrazky__clanek {
-    margin-right: 0;
-  }
-  .odrazky__clanek {
-    &:nth-child(odd) {
-      .odrazky__item {
-        margin-left: 20px;
-      }
-    }
-    &:nth-child(even) {
-      .odrazky__item {
-        margin-right: 20px;
-      }
-    }
-  }
   .main__content {
     margin-right: 35px;
   }
@@ -522,15 +493,9 @@
     max-width: 50%;
     flex: 0 50%;
   }
-  .typo__clanek-text {
+
+  .typo__wrapper {
     padding-left: 0;
-  }
-  .typo__sprava,
-  .typo-clanek,
-  .odrazky,
-  .typo__tabl,
-  .typo__albums {
-    margin-left: 0;
   }
   .page-title {
     font-size: 46px;
@@ -562,12 +527,6 @@
 
 /// media 745  -------------------- --------------------  --------------------
 @media (max-width: 745px) {
-  .typo-clanek__item:nth-child(even) .typo-clanek__text {
-    margin-right: 0;
-  }
-  .typo-clanek__item:nth-child(odd) .typo-clanek__text {
-    padding-right: 0;
-  }
   .typo__clanek {
     height: 450px;
   }
@@ -904,51 +863,33 @@
   .game-tabs__tab.active {
     border-bottom: none;
   }
-  .typo__text {
+  .typo__wrapper p:first-child {
     font-size: 22px;
   }
   .typo__clanek {
     height: 380px;
     margin-bottom: 25px;
   }
-  .typo-clanek__item {
+  .typo__item,
+  .typo__item:nth-child(odd) {
     flex-direction: column;
   }
   .typo-clanek__img {
     margin: 0 auto;
   }
-  .typo-clanek__item:nth-child(odd) .typo-clanek__text {
-    margin: 0 50px;
-    text-align: center;
+  .typo__item:nth-child(odd) .typo-clanek__img,
+  .typo__item:nth-child(odd) .odrazky__item {
+    margin: 0 auto 15px;
   }
-  .typo-clanek__item:nth-child(even) .typo-clanek__text {
-    padding-right: 0;
-    margin: 0 50px;
-    text-align: center;
-  }
-  .typo-clanek__item:nth-child(even) {
-    flex-direction: column-reverse;
+  .typo__item:nth-child(even) .typo-clanek__img,
+  .typo__item:nth-child(even) .odrazky__item {
+    margin: 0 auto 15px;
   }
 
-  .odrazky__clanek {
-    flex-direction: column;
-    align-items: center;
-  }
-  .odrazky__clanek:nth-child(odd) {
-    flex-direction: column-reverse;
-  }
-  .odrazky__clanek:nth-child(odd) .odrazky__item {
-    margin-left: 0;
-  }
-  .odrazky__clanek:nth-child(even) .odrazky__item {
-    margin-right: 0;
-  }
   .odrazky__item {
     max-width: 145px;
   }
-  .odrazky__clanek .text-inter {
-    margin: 0 30px;
-  }
+
   table#typo-table .datum,
   table#typo-table .cas {
     padding-right: 15px;
@@ -1014,22 +955,17 @@
   .typo__clanek {
     height: 330px;
   }
-  .typo__album-foto,
   .odrazky__img {
-    height: 280px;
+    height: auto;
   }
-  .typo-clanek__item:nth-child(odd) .typo-clanek__text,
-  .typo-clanek__item:nth-child(even) .typo-clanek__text {
-    margin: 0;
+  .typo__album-foto {
+    height: 280px;
   }
 
   .typo__sprava {
     padding: 20px 0 20px 20px;
   }
-  .odrazky__clanek .text-inter {
-    margin: 0;
-    text-align: center;
-  }
+
   table#typo-table td {
     font-size: 12px;
   }

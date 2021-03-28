@@ -393,6 +393,10 @@
 }
 .zapasy-page__typ {
   color: #677177;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
 }
 .zapasy-page__logos {
   display: flex;
@@ -456,6 +460,7 @@
 /// aside start ----------------------------------
 .aside {
   max-width: 461px;
+  margin-top: 50px;
   width: 100%;
   &__title {
     color: $red;
@@ -506,7 +511,6 @@
   margin-top: 30px;
 }
 .aside__submenu {
-  margin-top: 50px;
   margin-bottom: 62px;
 }
 .aside__submenu-list {
@@ -624,7 +628,15 @@
 //// aside end ----------------------------------
 
 //// typo page start ----------------------------------------------------
-
+.typo__wrapper {
+  padding-left: 47px;
+  color: #000;
+  p:first-child {
+    font-size: 24px;
+    line-height: 32px;
+    font-family: 'Rajdhani', sans-serif;
+  }
+}
 .typo__clanek {
   width: 100%;
   display: block;
@@ -662,15 +674,10 @@
   font-size: 48px;
   line-height: 1.1;
   padding-top: 4px;
-}
-.typo__text {
-  font-size: 24px;
-  line-height: 32px;
-  margin-bottom: 34px;
+  padding-right: 15px;
 }
 
 .typo__clanek-text {
-  padding-left: 47px;
   color: #000;
   font-weight: 400;
   padding-right: 13px;
@@ -678,62 +685,61 @@
 }
 
 .typo__sprava {
-  margin-left: 40px;
   border-left: 10px solid $red;
   max-width: 686px;
   padding: 27px 10px 32px 40px;
   margin-bottom: 40px;
-  &-title {
+  h3 {
     font-size: 21px;
     text-transform: uppercase;
     line-height: 34px;
     color: $red;
     margin-bottom: 13px;
   }
-  &-text {
+  p {
     font-size: 24px;
     line-height: 32px;
-    color: #000;
-    font-weight: 400;
+    font-family: 'Rajdhani', sans-serif;
   }
 }
 
-.typo-clanek {
-  margin-left: 40px;
-  &__item {
-    display: flex;
-    margin-bottom: 40px;
-    &:nth-child(even) {
-      .typo-clanek__text {
-        margin-right: 25px;
-        padding-right: 15px;
-      }
-    }
-    &:nth-child(odd) {
-      .typo-clanek__text {
-        margin-left: 38px;
-        padding-right: 15px;
-      }
-    }
+.typo__item:nth-child(odd) {
+  .typo-clanek__img,
+  .odrazky__item {
+    margin-left: 30px;
   }
-  &__text {
-    max-width: 640px;
+  flex-flow: row-reverse;
+}
+.typo__item:nth-child(even) {
+  .typo-clanek__img,
+  .odrazky__item {
+    margin-right: 30px;
   }
-  &__img {
-    max-width: 190px;
-    height: 200px;
-    img {
-      width: 100%;
-      height: 100%;
-      display: block;
-      object-fit: cover;
-    }
+}
+
+.typo__item {
+  display: flex;
+  margin-bottom: 40px;
+}
+.typo__item {
+  p {
+    width: 100%;
+  }
+}
+
+.typo-clanek__img {
+  max-width: 190px;
+  height: 200px;
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
   }
 }
 
 /// typo tabl
 .typo__tabl {
-  margin-left: 45px;
   margin-bottom: 31px;
 }
 .typo__tabl-title {
@@ -792,10 +798,8 @@ table#typo-table {
 }
 
 .odrazky {
-  margin-left: 45px;
   &__img {
-    max-width: 860px;
-    height: 471px;
+    width: 100%;
     margin-bottom: 29px;
     img {
       display: block;
@@ -834,19 +838,7 @@ table#typo-table {
       font-weight: 400;
     }
   }
-  &__clanek {
-    @include jcsb;
-    margin-right: 13px;
-    margin-bottom: 32px;
-    &:nth-child(odd) {
-      .text-inter {
-        margin-top: 9px;
-      }
-    }
-    .text-inter {
-      max-width: 618px;
-    }
-  }
+
   &__item {
     background-color: #cbd4d9;
     min-width: 190px;
@@ -887,6 +879,7 @@ table#typo-table {
     position: relative;
     padding-left: 41px;
     text-transform: uppercase;
+
     &::before {
       content: '';
       position: absolute;
@@ -906,6 +899,7 @@ table#typo-table {
   position: relative;
 }
 .typo__album-title {
+  color: #fff;
   background-color: rgba(#eb1a13, 0.7);
   font-size: 12px;
   font-family: 'Inter', sans-serif;
@@ -1740,9 +1734,7 @@ table#liders__table {
     margin: 0 auto;
     max-width: 860px;
   }
-  .typo__clanek-text {
-    padding-left: 0;
-  }
+
   .typo__sprava,
   .typo-clanek,
   .typo__tabl,
@@ -2320,18 +2312,8 @@ table#liders__table {
     font-size: 16px;
     line-height: 28px;
   }
-
-  &__text {
+  p {
     margin-bottom: 20px;
-    color: #000;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 28px;
-
-    span {
-      font-weight: 600;
-    }
   }
 }
 

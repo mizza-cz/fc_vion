@@ -36,6 +36,20 @@ p {
   margin: 0;
 }
 
+p {
+  color: #000;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 34px;
+}
+.text {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: 'Rajdhani', sans-serif;
+}
+
 body {
   font-family: 'Rajdhani', sans-serif;
   font-style: normal;
@@ -92,13 +106,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.text-inter {
-  color: #000;
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
-}
+
 .page-title {
   font-size: 50px;
   color: $red;
