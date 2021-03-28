@@ -447,6 +447,7 @@
   &__content {
     max-width: 911px;
     margin-right: 48px;
+    width: 100%;
   }
 }
 
@@ -1617,6 +1618,11 @@ table#liders__table {
   color: #292f3f;
   text-align: center;
   padding-top: 82px;
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   &__inner {
     display: flex;
     align-items: center;
@@ -1626,17 +1632,17 @@ table#liders__table {
   &__club {
     display: flex;
     align-items: center;
+    width: 420px;
   }
   .result__title {
     margin-bottom: 0;
-    margin-left: 12px;
   }
 }
 
 .game__result {
   font-size: 60px;
   color: $green;
-  margin: 0 92px;
+  margin: 0 80px;
   &-detail {
     display: block;
     font-size: 18px;
@@ -1658,18 +1664,22 @@ table#liders__table {
 
 .game__club-name {
   font-size: 48px;
-  max-width: 280px;
+  width: 100%;
 }
 .game__club--right {
+  .game__club-img {
+    margin-right: 33px;
+  }
   .game__club-name {
     text-align: left;
-    margin-left: 33px;
   }
 }
 .game__club--left {
+  .game__club-img {
+    margin-left: 33px;
+  }
   .game__club-name {
     text-align: end;
-    margin-right: 50px;
   }
 }
 

@@ -186,14 +186,13 @@
   }
   .game__club-name {
     font-size: 40px;
-    max-width: 235px;
   }
   .game__club-img {
     width: 110px;
     height: 110px;
   }
   .game__result {
-    margin: 0 80px;
+    margin: 0 60px;
   }
 }
 
@@ -375,18 +374,9 @@
     height: auto;
     align-items: center;
   }
-  .game__club--left .game__club-name {
-    margin-right: 20px;
-  }
-  .game__result {
-    margin: 0 70px;
-  }
-  .game__club--right .game__club-name {
-    margin-left: 20px;
-  }
+
   .game__club-name {
     font-size: 34px;
-    max-width: 205px;
   }
 }
 
@@ -428,22 +418,24 @@
 
 /// media 920  -------------------- --------------------  --------------------
 @media (max-width: 920px) {
+  .game__club--right .game__club-img {
+    margin-right: 0;
+  }
+  .game__club--left .game__club-img {
+    margin-left: 0;
+  }
   .game__tab {
     margin-bottom: 70px;
   }
   .game__club {
     flex-direction: column;
   }
+  .game__club--right {
+    align-items: flex-start;
+  }
   .game__club--left {
     flex-direction: column-reverse;
-  }
-  .game__club--right .game__club-name {
-    margin-left: 0;
-    text-align: center;
-  }
-  .game__club--left .game__club-name {
-    margin-right: 0;
-    text-align: center;
+    align-items: flex-end;
   }
 }
 
@@ -1006,12 +998,12 @@
     top: 3px;
   }
   .game__club-name {
-    font-size: 21px;
+    font-size: 19px;
     max-width: 130px;
   }
   .game__result {
     font-size: 35px;
-    margin: 0 10px;
+    margin: 0 40px;
   }
   .timeline__icon--right {
     padding-right: 25px;
@@ -1208,6 +1200,9 @@
 /// media 400 -------------------- --------------------  --------------------
 
 @media (max-width: 400px) {
+  .game__club-name {
+    display: none;
+  }
   .jq-selectbox__select-text::before {
     right: 7px;
   }

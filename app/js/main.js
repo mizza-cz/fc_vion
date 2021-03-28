@@ -1,9 +1,9 @@
 $(function () {
   $('select').styler();
   //presmerovani pomoci selectu
-  $('.select__redirect').change(function () {
-    location.href = $(this).val();
-  });
+  // $('.select__redirect').change(function () {
+  //   location.href = $(this).val();
+  // });
   $(function () {
     $('[data-toggle="tooltip"]').tooltip();
   });
