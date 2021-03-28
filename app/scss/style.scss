@@ -1529,12 +1529,13 @@ table#liders__table {
   text-transform: uppercase;
 }
 .main__partners {
-  display: flex;
-  max-width: 650px;
+  width: 100%;
+  max-width: 400px;
+  margin-right: 20px;
   &-link {
     display: block;
-    max-width: 225px;
-    margin-right: 40px;
+    max-width: 300px;
+    width: 300px;
   }
   &-img {
     width: 100%;
@@ -1543,21 +1544,23 @@ table#liders__table {
   }
 }
 
-.partners__side {
-  max-width: 800px;
-  width: 100%;
+.slick-slider {
+  max-width: 1050px;
   margin-left: auto;
 }
 .partners__slider-link {
-  max-width: 80px;
+  max-width: 140px;
   display: block;
+  margin-right: 20px;
   img {
     width: 100%;
     height: 100%;
     object-fit: contain;
   }
 }
-
+.slick-slide {
+  margin-right: 20px;
+}
 /// partners section end ---------------------------------------
 
 //// partneri-page start -------------------------------------------------------------

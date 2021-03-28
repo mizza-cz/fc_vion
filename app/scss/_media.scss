@@ -15,6 +15,9 @@
 
 /// 1420   -------------------- --------------------  --------------------
 @media (max-width: 1420px) {
+  .partners__slider-link {
+    max-width: 120px;
+  }
   .player__arrow--left {
     left: 15px;
   }
@@ -28,6 +31,9 @@
 
 /// 1380   -------------------- --------------------  --------------------
 @media (max-width: 1380px) {
+  .slick-slider {
+    max-width: 900px;
+  }
   .clanek__title {
     font-size: 34px;
     line-height: 35px;
@@ -128,13 +134,6 @@
   }
 }
 
-// media 1239  -------------------- --------------------  --------------------
-@media (max-width: 1239px) {
-  .partners__side {
-    max-width: 660px;
-  }
-}
-
 // media 1200  -------------------- --------------------  --------------------
 @media (max-width: 1200px) {
   .hrac__gallery-item {
@@ -164,6 +163,29 @@
   }
   .game__result {
     margin: 0 60px;
+  }
+}
+// media 1199 -------------------- --------------------  --------------------
+@media (max-width: 1199px) {
+  .partners__side {
+    max-width: 70%;
+  }
+  .partners__slider-link {
+    margin-bottom: 20px;
+    margin-right: 0;
+    max-width: 100px;
+  }
+  .partners__inner {
+    padding-top: 75px;
+  }
+  .main__partners {
+    max-width: 100%;
+    padding-right: 30px;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .main__partners-link {
+    margin-bottom: 20px;
   }
 }
 
@@ -280,28 +302,7 @@
     }
   }
 }
-// media 1099 -------------------- --------------------  --------------------
-@media (max-width: 1099px) {
-  .partners__side {
-    max-width: 70%;
-  }
-  .partners__slider-link {
-    margin-bottom: 20px;
-    margin-right: 0;
-  }
-  .partners__inner {
-    padding-top: 75px;
-  }
-  .main__partners {
-    max-width: 100%;
-    padding-right: 15px;
-    flex-direction: column;
-    margin: 0 auto;
-  }
-  .main__partners-link {
-    margin-bottom: 20px;
-  }
-}
+
 // media 1050  -------------------- --------------------  --------------------
 @media (max-width: 1050px) {
   .main.main-soupiska .aside {
@@ -375,6 +376,42 @@
 
 /// media 940  -------------------- --------------------  --------------------
 @media (max-width: 940px) {
+  .partners__title {
+    left: 0;
+  }
+  .partners__side {
+    margin-top: 30px;
+    padding-top: 45px;
+    position: relative;
+    .partners__title {
+      top: 0;
+    }
+  }
+  .main__partners {
+    padding-right: 0;
+  }
+  .partners__inner {
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+  }
+  .partners__side {
+    text-align: center;
+    max-width: 100%;
+  }
+  .main__partners-link {
+    margin-right: 0;
+    max-width: 100%;
+  }
+  .partner__inner::before {
+    width: 170px;
+    top: 40px;
+  }
+  .partner .container {
+    padding: 0;
+    img {
+      border-radius: 0;
+    }
+  }
   .sestavy {
     flex-wrap: wrap;
     margin-bottom: 40px;
@@ -437,13 +474,6 @@
   .gallery img {
     width: 160px;
     height: 160px;
-  }
-}
-
-/// media 889  -------------------- --------------------  --------------------
-@media (max-width: 889px) {
-  .partners__side {
-    max-width: 50%;
   }
 }
 
@@ -778,43 +808,6 @@
   }
   .team--left .team__name {
     margin-top: 17px;
-  }
-  .partners__title {
-    left: 0;
-    right: 0;
-    text-align: center;
-  }
-  .partners__side {
-    margin-top: 30px;
-    padding-top: 45px;
-    position: relative;
-    .partners__title {
-      top: 0;
-    }
-  }
-  .main__partners {
-    padding-right: 0;
-  }
-  .partners__inner {
-    flex-wrap: wrap;
-    padding-bottom: 10px;
-  }
-  .partners__side {
-    text-align: center;
-    max-width: 100%;
-  }
-  .main__partners-link {
-    margin-right: 0;
-  }
-  .partner__inner::before {
-    width: 170px;
-    top: 40px;
-  }
-  .partner .container {
-    padding: 0;
-    img {
-      border-radius: 0;
-    }
   }
 }
 

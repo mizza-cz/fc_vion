@@ -54,23 +54,31 @@ $(function () {
   $('.partners__slider').slick({
     dots: false,
     infinite: false,
-    slidesToShow: 8,
-    slidesToScroll: 8,
+    slidesToShow: 7,
+    slidesToScroll: 7,
     arrows: false,
     infinite: true,
     autoplay: true,
     autoplaySpeed: 2000,
     responsive: [
       {
-        breakpoint: 1240,
+        breakpoint: 1420,
         settings: {
           slidesToShow: 6,
           slidesToScroll: 6,
         },
       },
       {
-        breakpoint: 1100,
+        breakpoint: 1220,
 
+        settings: {
+          rows: 2,
+          slidesToShow: 4,
+          slidesToScroll: 4,
+        },
+      },
+      {
+        breakpoint: 660,
         settings: {
           rows: 2,
           slidesToShow: 3,
@@ -78,7 +86,7 @@ $(function () {
         },
       },
       {
-        breakpoint: 770,
+        breakpoint: 480,
         settings: {
           rows: 2,
           slidesToShow: 2,
