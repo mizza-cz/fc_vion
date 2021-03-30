@@ -252,6 +252,7 @@ $(function () {
     var hours = document.getElementById('timer-hours');
     var minutes = document.getElementById('timer-minutes');
     var seconds = document.getElementById('timer-seconds');
+    var den = document.querySelector('.timer__label-days');
 
     days.querySelector('.timer__value').innerHTML = ('0' + t.days).slice(-2);
     hours.querySelector('.timer__value').innerHTML = ('0' + t.hours).slice(-2);
@@ -259,7 +260,9 @@ $(function () {
 
     // Adds a leading 0 to maintain spacing
     seconds.querySelector('.timer__value').innerHTML = ('0' + t.seconds).slice(-2);
-
+    // sklonovani
+    den.innerHTML = t.days >= 5 ? 'dní' : t.days == 1 ? 'deň' : 'dni';
+   
     // If the timer is at zero
     if (t.total <= 0) {
       // Stop the timer
