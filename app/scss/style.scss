@@ -669,12 +669,20 @@
     }
   }
 }
+.typo__clanek {
+  .typo__title {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 48px;
+    line-height: 1.1;
+    padding-top: 4px;
+    padding-right: 15px;
+  }
+}
 .typo__title {
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  font-size: 48px;
-  line-height: 1.1;
-  padding-top: 4px;
-  padding-right: 15px;
+  font-size: 50px;
+  color: $red;
+  margin-bottom: 60px;
+  margin-top: 70px;
 }
 
 .typo__clanek-text {
