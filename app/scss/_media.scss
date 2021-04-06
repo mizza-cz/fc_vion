@@ -117,6 +117,9 @@
 
 /// 1280   -------------------- --------------------  --------------------
 @media (max-width: 1280px) {
+  .main__partners {
+    margin-right: 40px;
+  }
   .zapasy-page {
     .main__content {
       margin: 0 auto;
@@ -185,6 +188,8 @@
   }
   .partners__inner {
     padding-top: 75px;
+    align-items: center;
+    padding-bottom: 30px;
   }
   .main__partners {
     max-width: 100%;

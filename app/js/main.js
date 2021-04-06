@@ -54,39 +54,48 @@ $(function () {
   $('.partners__slider').slick({
     dots: false,
     infinite: false,
-    slidesToShow: 7,
-    slidesToScroll: 7,
+    slidesToShow: 5,
+    slidesToScroll: 5,
     arrows: false,
     infinite: true,
     autoplay: true,
     autoplaySpeed: 2000,
     responsive: [
+      // {
+      //   breakpoint: 1420,
+      //   settings: {
+      //     slidesToShow: 6,
+      //     slidesToScroll: 6,
+      //   },
+      // },
       {
-        breakpoint: 1420,
-        settings: {
-          slidesToShow: 6,
-          slidesToScroll: 6,
-        },
-      },
-      {
-        breakpoint: 1220,
+        breakpoint: 1020,
 
         settings: {
-          rows: 2,
+          rows: 1,
           slidesToShow: 4,
           slidesToScroll: 4,
         },
       },
       {
-        breakpoint: 660,
+        breakpoint: 921,
+
         settings: {
-          rows: 2,
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          rows: 1,
+          slidesToShow: 5,
+          slidesToScroll: 5,
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 766,
+        settings: {
+          rows: 1,
+          slidesToShow: 4,
+          slidesToScroll: 4,
+        },
+      },
+      {
+        breakpoint: 601,
         settings: {
           rows: 2,
           slidesToShow: 2,
@@ -262,7 +271,7 @@ $(function () {
     seconds.querySelector('.timer__value').innerHTML = ('0' + t.seconds).slice(-2);
     // sklonovani
     den.innerHTML = t.days >= 5 ? 'dní' : t.days == 1 ? 'deň' : 'dni';
-   
+
     // If the timer is at zero
     if (t.total <= 0) {
       // Stop the timer
