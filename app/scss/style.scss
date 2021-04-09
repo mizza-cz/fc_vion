@@ -1569,6 +1569,10 @@ table#liders__table {
   max-width: 1050px;
   margin-left: auto;
 }
+.slick-track {
+  display: flex;
+  align-items: center;
+}
 .partners__slider-link {
   max-width: 140px;
   display: block;
@@ -2175,6 +2179,9 @@ table#liders__table {
 /// statistiky page end ----------------------------------------------
 
 // soupiska page start -------------------------------------------------
+.soupiska__inner {
+  margin-bottom: 30px;
+}
 .soupiska__box {
   display: flex;
   flex-wrap: wrap;
