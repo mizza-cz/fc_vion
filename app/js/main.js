@@ -1,9 +1,5 @@
 $(function () {
   $('select').styler();
-  //presmerovani pomoci selectu
-  // $('.select__redirect').change(function () {
-  //   location.href = $(this).val();
-  // });
   $(function () {
     $('[data-toggle="tooltip"]').tooltip();
   });
@@ -61,13 +57,6 @@ $(function () {
     autoplay: true,
     autoplaySpeed: 2000,
     responsive: [
-      // {
-      //   breakpoint: 1420,
-      //   settings: {
-      //     slidesToShow: 6,
-      //     slidesToScroll: 6,
-      //   },
-      // },
       {
         breakpoint: 1020,
 
@@ -180,11 +169,6 @@ $(function () {
     $(this).lightGallery({
       dynamic: true,
       dynamicEl: [
-        // {
-        //   src: '/images/gallery/1.jpg',
-        //   thumb: '/images/gallery/1.jpg',
-        //   subHtml: '<h4>39. kolo Topligy (Foto: Josef Poláček)',
-        // },
         {
           src: 'images/gallery/1.jpg',
           thumb: 'images/gallery/1.jpg',
@@ -232,13 +216,20 @@ $(function () {
 (function () {
   'use strict';
 
+  /**
+   * Define global Util object if it doesn't exist
+   */
   if ('object' !== typeof window.Timer) {
     window.Timer = {};
   }
 
+  /**
+   * Namspace string
+   */
   Timer.ns = 'JavaScript Timer';
 
   Timer.getTimeRemaining = function (endtimeRaw) {
+    // Some browsers need a "T" in there...
     var endtime = new Date(endtimeRaw.replace(/\s/, 'T'));
     var t = Date.parse(endtime) - Date.parse(new Date());
     var seconds = Math.floor((t / 1000) % 60);
@@ -246,6 +237,7 @@ $(function () {
     var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
     var days = Math.floor(t / (1000 * 60 * 60 * 24));
 
+    // Build out the JSON object
     return {
       total: t,
       days: days,
@@ -271,7 +263,6 @@ $(function () {
     seconds.querySelector('.timer__value').innerHTML = ('0' + t.seconds).slice(-2);
     // sklonovani
     den.innerHTML = t.days >= 5 ? 'dní' : t.days == 1 ? 'deň' : 'dni';
-
     // If the timer is at zero
     if (t.total <= 0) {
       // Stop the timer
