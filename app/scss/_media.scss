@@ -117,6 +117,12 @@
 
 /// 1280   -------------------- --------------------  --------------------
 @media (max-width: 1280px) {
+  .btn-search {
+    margin-bottom: 30px;
+  }
+  .form {
+    flex-wrap: wrap;
+  }
   .main__partners {
     margin-right: 40px;
   }
@@ -142,6 +148,9 @@
   }
   .tabl-right__ban {
     max-height: 280px;
+  }
+  .select__redirect {
+    margin-bottom: 30px;
   }
 }
 
@@ -470,9 +479,6 @@
       margin-right: 30px;
       margin-bottom: 15px;
     }
-    .btn-search {
-      margin-left: 30px;
-    }
   }
   .zapasy-page__link {
     line-height: 20px;
@@ -529,6 +535,9 @@
 }
 /// media 800  -------------------- --------------------  --------------------
 @media (max-width: 800px) {
+  .typo__clanek .typo__title {
+    font-size: 36px;
+  }
   .hrac__gallery-item {
     flex: 0 0 33.333%;
   }
@@ -771,6 +780,9 @@
   .form-gallery {
     padding-bottom: 15px;
   }
+  .select__redirect {
+    margin-right: 0;
+  }
   .gallery-page .select__redirect {
     max-width: 100%;
     margin-bottom: 15px;
@@ -915,6 +927,9 @@
 
 /// media 480 -------------------- --------------------  --------------------
 @media (max-width: 480px) {
+  .typo__clanek .typo__title {
+    font-size: 26px;
+  }
   .hrac__gallery-item {
     flex: 100%;
   }

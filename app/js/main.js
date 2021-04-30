@@ -43,8 +43,9 @@ $(function () {
   $('.menu__btn').on('click', function () {
     $('.menu__list').slideToggle();
   });
+
   $('.menu__list-item').on('click', function () {
-    $('.header__menu-dropdown').slideToggle();
+    $(this).closest('.menu__list-item').toggleClass('active');
   });
   // slider
   $('.partners__slider').slick({
@@ -262,7 +263,7 @@ $(function () {
     // Adds a leading 0 to maintain spacing
     seconds.querySelector('.timer__value').innerHTML = ('0' + t.seconds).slice(-2);
     // sklonovani
-    den.innerHTML = t.days >= 5 ? 'dní' : t.days == 1 ? 'deň' : 'dni';
+    den.innerHTML = t.days >= 5 ? 'dní' : t.days == 1 ? 'deŘ' : 'dni';
     // If the timer is at zero
     if (t.total <= 0) {
       // Stop the timer

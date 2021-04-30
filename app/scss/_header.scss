@@ -162,6 +162,14 @@
 }
 
 @media (max-width: 1080px) {
+  .menu__list-item.active {
+    .header__menu-dropdown {
+      display: block;
+    }
+  }
+  .header__menu-dropdown {
+    display: none;
+  }
   .header__menu-dropdown li {
     padding: 0;
     margin: 0 auto;

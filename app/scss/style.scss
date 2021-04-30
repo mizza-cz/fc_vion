@@ -367,9 +367,6 @@
 }
 .zapasy-page__select {
   display: flex;
-  .select__redirect + .select__redirect {
-    margin-left: 50px;
-  }
 }
 .zapasy-page__box {
   display: flex;
@@ -677,6 +674,8 @@
     padding-top: 4px;
     padding-right: 15px;
     color: #fff;
+    margin-top: 16px;
+    margin-bottom: 0px;
   }
 }
 .typo__title {
@@ -2320,6 +2319,7 @@ table#liders__table {
   &__list {
     margin-top: 50px;
     li {
+      color: #fff;
       font-size: 21px;
       font-family: 'Inter', sans-serif;
       line-height: 32px;
