@@ -299,9 +299,7 @@
   .main__content {
     width: 100%;
   }
-  .jq-selectbox__select {
-    padding: 6px;
-  }
+
   .jq-selectbox__dropdown {
     top: 40px !important;
   }
@@ -338,11 +336,14 @@
 .archiv__filtr {
   @include jcsb;
   width: 525px;
+  .select__redirect {
+    margin-right: 0;
+  }
 }
 .btn-search {
   outline: none;
   height: 40px;
-  padding: 4px 8px;
+  padding: 11px 8px;
   display: inline-block;
   width: 120px;
   border: 1px solid $red;

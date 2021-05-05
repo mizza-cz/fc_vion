@@ -15,6 +15,17 @@
 
 /// 1420   -------------------- --------------------  --------------------
 @media (max-width: 1420px) {
+  .form-gallery.form {
+    flex-wrap: wrap;
+    justify-content: start;
+    .select__redirect {
+      margin-right: 50px;
+    }
+    .input {
+      max-width: 610px;
+      margin-bottom: 30px;
+    }
+  }
   .partners__slider-link {
     max-width: 120px;
   }
@@ -376,6 +387,11 @@
 
 // media 980  -------------------- --------------------  --------------------
 @media (max-width: 980px) {
+  .form-gallery.form {
+    .input {
+      margin-right: 50px;
+    }
+  }
   .tabl-right {
     flex-direction: column;
     align-items: center;
@@ -614,6 +630,11 @@
 
 /// media 720  -------------------- --------------------  --------------------
 @media (max-width: 720px) {
+  .form-gallery.form {
+    .input {
+      margin-right: 0px;
+    }
+  }
   .zapasy-page__num {
     font-size: 42px;
   }
@@ -716,6 +737,12 @@
 /// media 640  -------------------- --------------------  --------------------
 
 @media (max-width: 640px) {
+  .soupiska__inner.form {
+    flex-direction: column;
+    .select__redirect {
+      margin-right: 0;
+    }
+  }
   .hrac .container {
     padding: 0;
   }
@@ -774,6 +801,15 @@
 
 // media 600  -------------------- --------------------  --------------------
 @media (max-width: 600px) {
+  .form-gallery.form {
+    flex-direction: column;
+    .input {
+      margin-bottom: 20px;
+    }
+    .select__redirect {
+      margin-right: 0px;
+    }
+  }
   .hrac__list li span {
     display: block;
   }
@@ -838,9 +874,6 @@
 
 //// media 560  -------------------- --------------------  --------------------
 @media (max-width: 560px) {
-  .btn-search {
-    width: 100%;
-  }
   .archiv__search {
     padding-bottom: 20px;
   }
@@ -927,6 +960,15 @@
 
 /// media 480 -------------------- --------------------  --------------------
 @media (max-width: 480px) {
+  .select__redirect,
+  .btn-search,
+  .select__redirect.select-liga {
+    width: 100%;
+    max-width: 100%;
+  }
+  .select__redirect {
+    margin-bottom: 20px;
+  }
   .typo__clanek .typo__title {
     font-size: 26px;
   }
@@ -1165,7 +1207,6 @@
   }
   .jq-selectbox__select-text {
     font-size: 16px;
-    padding: 5px 7px;
   }
   .jq-select-multiple li,
   .jq-selectbox li {

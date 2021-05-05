@@ -78,10 +78,14 @@
   }
 }
 
-.menu__list-item a {
+.menu__list-category {
   font-size: 18px;
   line-height: 23px;
   text-transform: uppercase;
+  cursor: pointer;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: bold;
+  color: #fff;
 }
 
 /// gambac
@@ -143,7 +147,7 @@
 
 /// media
 @media (max-width: 1220px) {
-  .menu__list-item a {
+  .menu__list-category {
     font-size: 16px;
   }
   .menu__list-item {
@@ -244,7 +248,7 @@
       }
     }
   }
-  .menu__list-item a {
+  .menu__list-category {
     padding: 10px 0;
   }
 }
