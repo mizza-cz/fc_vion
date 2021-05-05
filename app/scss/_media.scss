@@ -167,6 +167,8 @@
 
 // media 1200  -------------------- --------------------  --------------------
 @media (max-width: 1200px) {
+  .hrac-content {
+  }
   .hrac__gallery-item {
     flex: 0 0 25%;
   }
@@ -671,6 +673,7 @@
     margin-right: 0;
     width: 100%;
     margin-bottom: 20px;
+    height: 420px;
     img {
       width: 100%;
       object-fit: cover;
@@ -960,6 +963,9 @@
 
 /// media 480 -------------------- --------------------  --------------------
 @media (max-width: 480px) {
+  .archiv__img {
+    height: 300px;
+  }
   .select__redirect,
   .btn-search,
   .select__redirect.select-liga {
@@ -1199,6 +1205,9 @@
 /// media 400 -------------------- --------------------  --------------------
 
 @media (max-width: 400px) {
+  .archiv__img {
+    height: 200px;
+  }
   .game__club-name {
     display: none;
   }

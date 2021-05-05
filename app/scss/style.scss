@@ -2338,6 +2338,15 @@ table#liders__table {
 .hrac-content {
   color: $gray;
   margin: 0px 50px 0 50px;
+
+  .hrac__clanky {
+    .aside__clanek-nazev {
+      max-width: 480px;
+    }
+    p {
+      display: none;
+    }
+  }
   &__row {
     color: #000;
     font-family: 'Inter', sans-serif;
