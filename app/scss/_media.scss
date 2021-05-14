@@ -68,9 +68,6 @@
 }
 /// 1342   -------------------- --------------------  --------------------
 @media (max-width: 1342px) {
-  .typo__wrapper {
-    padding-left: 25px;
-  }
   .hrac__clanky {
     flex: 0 60%;
   }
@@ -167,8 +164,7 @@
 
 // media 1200  -------------------- --------------------  --------------------
 @media (max-width: 1200px) {
-  .hrac-content {
-  }
+  
   .hrac__gallery-item {
     flex: 0 0 25%;
   }
@@ -564,9 +560,6 @@
     flex: 0 50%;
   }
 
-  .typo__wrapper {
-    padding-left: 0;
-  }
   .page-title {
     font-size: 46px;
   }

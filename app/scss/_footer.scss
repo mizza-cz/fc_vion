@@ -6,6 +6,9 @@
 }
 .footer {
   background-color: $gray;
+  a {
+    color: #fff;
+  }
 
   &__inner {
     padding: 82px 0 79px 0;
