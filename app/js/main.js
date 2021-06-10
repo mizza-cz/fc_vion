@@ -47,6 +47,14 @@ $(function () {
   $('.menu__list-item').on('click', function () {
     $(this).closest('.menu__list-item').toggleClass('active');
   });
+
+  $('#clanky .clanek').hover(
+    function () {
+      $('#clanky .clanek').removeClass('clanek-active');
+      $(this).addClass('clanek-active');
+    },
+    function () {},
+  );
   // slider
   $('.partners__slider').slick({
     dots: false,

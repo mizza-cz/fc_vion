@@ -583,6 +583,9 @@
 }
 /// media 780  -------------------- --------------------  --------------------
 @media (max-width: 780px) {
+  .footer__scroll-top{
+    display: none;
+  }
   .timeline__message {
     max-width: 200px;
   }
