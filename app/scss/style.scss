@@ -341,7 +341,8 @@
     margin-right: 0;
   }
 }
-.btn-search {
+.btn-search,
+#jsbutton {
   outline: none;
   height: 40px;
   padding: 11px 8px;
@@ -355,6 +356,9 @@
     background-color: $red;
     color: #fff;
   }
+}
+#jsbutton{
+  width: auto;
 }
 //archiv page end ---------------------------------
 /// zapasa-page start ---------------------------
@@ -1293,6 +1297,9 @@ table th a,
 table td a {
   color: #2c2c2c;
   font-weight: 500;
+  &:hover{
+    text-decoration: underline !important;
+  }
 }
 table tr {
   line-height: normal;
@@ -2600,6 +2607,7 @@ table#liders__table {
     &:nth-child(2){
       text-align: left;
       width: fit-content;
+      font-weight: 700;
     }
     &:first-child{
       width: 40px;
@@ -2617,4 +2625,32 @@ table#liders__table {
     color: $red
   }
 }
+
+
+.form-group{
+  margin-bottom: 1rem;
+  textarea{
+    border: 1px solid #eb1a13;
+    padding: 10px 10px 10px 12px;
+    border-radius: 2px;
+    margin-bottom: 16px;
+  }
+  label{
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
+  input{
+    margin-bottom: 15px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #eb1a13;
+    padding: 10px 10px 10px 12px;
+    border-radius: 2px;
+  }
+  
+}
+.g-recaptcha{
+  margin-bottom: 16px;
+}
+
 @import 'media';

@@ -146,7 +146,7 @@ body {
   max-width: 380px;
 }
 
-.select__redirect {
+.select__redirect, .form-control.jq-selectbox  {
   display: block;
   margin-bottom: 50px;
   background-color: $red;
@@ -154,6 +154,9 @@ body {
   width: 100%;
   color: #fff;
   margin-right: 50px;
+}
+.form-control.jq-selectbox{
+  max-width: 100%;
 }
 .jq-selectbox__select-text {
   width: 100% !important;
@@ -182,6 +185,7 @@ body {
   top: 40px !important;
   padding-top: 10px;
   padding-bottom: 10px;
+  
 }
 .jq-select-multiple li,
 .jq-selectbox li {
@@ -190,7 +194,10 @@ body {
   padding-bottom: 5px;
   font-weight: bold;
   text-align: left;
-  padding-left: 25px;
+  padding-left: 25px !important;
+  &::before{
+    display: none;
+  }
   &:hover {
     background-color: $red;
     color: #fff;
