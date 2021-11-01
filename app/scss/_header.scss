@@ -40,6 +40,11 @@
   padding-top: 7px;
   &__link {
     display: block;
+    color: #fff;
+    transition: all 0.3s;
+    &:hover{
+      color: $blue;
+    }
   }
   &__list + &__list {
     margin-left: 25px;

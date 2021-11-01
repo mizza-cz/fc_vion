@@ -38,6 +38,16 @@ $(function () {
       .fadeIn();
     return false;
   });
+  $('.tabulka-page__tabs .tabl-tabs__tab').on('click', function (event) {
+    var id = $(this).attr('data-id');
+    $('.tabulka-page__tabs').find('.tabulka-page__inner').removeClass('active-tab').hide();
+    $('.tabulka-page__tabs .tabl-tabs').find('.tabl-tabs__tab').removeClass('active');
+    $(this).addClass('active');
+    $('#' + id)
+      .addClass('active-tab')
+      .fadeIn();
+    return false;
+  });
 
   // header menu
   $('.menu__btn').on('click', function () {

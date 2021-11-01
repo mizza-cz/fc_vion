@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>FC ViOn</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Rajdhani:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.3.2/css/lightgallery.css"
@@ -208,80 +208,236 @@
       </select>
       <button class="btn btn-search" type="submit">Vyhľadať</button>
     </form>
-    <div class="tabulka-page__inner">
-      <table>
-         <tr>
-            <th>P.</th>
-            <th><a href="#">Tím</a></th>
-            <th><a href="#">Z</a></th>
-            <th><a href="#">V</a></th>
-            <th><a href="#">R</a></th>
-            <th><a href="#">P</a></th>
-            <th>Scóre</th>
-            <th><a href="#">B</a></th>
-         </tr>
-         <tr>
-            <td>1</td>
-            <td>SK Slavia Praha</td>
-            <td>30</td>
-            <td>24</td>
-            <td>66</td>
-            <td>7</td>
-            <td>90:10</td>
-            <td>33</td>
-         </tr>
-         <tr>
-            <td>1</td>
-            <td>SK Slavia Praha</td>
-            <td>30</td>
-            <td>24</td>
-            <td>66</td>
-            <td>7</td>
-            <td>90:10</td>
-            <td>33</td>
-         </tr>
-         <tr>
-            <td>1</td>
-            <td>SK Slavia Praha</td>
-            <td>30</td>
-            <td>24</td>
-            <td>66</td>
-            <td>7</td>
-            <td>900:100</td>
-            <td>33</td>
-         </tr>
-         <tr>
-            <td>1</td>
-            <td>SK Slavia Praha</td>
-            <td>30</td>
-            <td>24</td>
-            <td>66</td>
-            <td>7</td>
-            <td>90:10</td>
-            <td>33</td>
-         </tr>
-         <tr class="vion">
-            <td>3</td>
-            <td>FK Vion</td>
-            <td>30</td>
-            <td>24</td>
-            <td>66</td>
-            <td>7</td>
-            <td>90:10</td>
-            <td>33</td>
-         </tr>
-         <tr>
-            <td>1</td>
-            <td>SK Slavia Praha</td>
-            <td>30</td>
-            <td>24</td>
-            <td>66</td>
-            <td>7</td>
-            <td>90:10</td>
-            <td>33</td>
-         </tr>
-      </table>
+    <div class="tabulka-page__tabs">
+      <div class="tabl-tabs">
+        <span class="tabl-tabs__tab active" data-id="celkom">Celkem</span>
+        <span class="tabl-tabs__tab " data-id="doma">Doma</span>
+        <span class="tabl-tabs__tab " data-id="vonku">Venku</span>
      </div>
+      <div class="tabulka-page__inner active-tab" id="celkom">
+        <table>
+           <tr>
+              <th>P.</th>
+              <th><a href="#">Tím</a></th>
+              <th><a href="#">Z</a></th>
+              <th><a href="#">V</a></th>
+              <th><a href="#">R</a></th>
+              <th><a href="#">P</a></th>
+              <th>Scóre</th>
+              <th><a href="#">B</a></th>
+           </tr>
+           <tr>
+              <td>1</td>
+              <td>SK Slavia Praha</td>
+              <td>30</td>
+              <td>24</td>
+              <td>66</td>
+              <td>7</td>
+              <td>90:10</td>
+              <td>33</td>
+           </tr>
+           <tr>
+              <td>1</td>
+              <td>SK Slavia Praha</td>
+              <td>30</td>
+              <td>24</td>
+              <td>66</td>
+              <td>7</td>
+              <td>90:10</td>
+              <td>33</td>
+           </tr>
+           <tr>
+              <td>1</td>
+              <td>SK Slavia Praha</td>
+              <td>30</td>
+              <td>24</td>
+              <td>66</td>
+              <td>7</td>
+              <td>900:100</td>
+              <td>33</td>
+           </tr>
+           <tr>
+              <td>1</td>
+              <td>SK Slavia Praha</td>
+              <td>30</td>
+              <td>24</td>
+              <td>66</td>
+              <td>7</td>
+              <td>90:10</td>
+              <td>33</td>
+           </tr>
+           <tr class="vion">
+              <td>3</td>
+              <td>FK Vion</td>
+              <td>30</td>
+              <td>24</td>
+              <td>66</td>
+              <td>7</td>
+              <td>90:10</td>
+              <td>33</td>
+           </tr>
+           <tr>
+              <td>1</td>
+              <td>SK Slavia Praha</td>
+              <td>30</td>
+              <td>24</td>
+              <td>66</td>
+              <td>7</td>
+              <td>90:10</td>
+              <td>33</td>
+           </tr>
+        </table>
+       </div>
+       <div class="tabulka-page__inner" id="doma">
+        <table>
+           <tr>
+              <th>P.</th>
+              <th><a href="#">Tím</a></th>
+              <th><a href="#">Z</a></th>
+              <th><a href="#">V</a></th>
+              <th><a href="#">R</a></th>
+              <th><a href="#">P</a></th>
+              <th>Scóre</th>
+              <th><a href="#">B</a></th>
+           </tr>
+           <tr>
+              <td>1</td>
+              <td>SK Slavia Praha</td>
+              <td>30</td>
+              <td>24</td>
+              <td>66</td>
+              <td>7</td>
+              <td>90:10</td>
+              <td>33</td>
+           </tr>
+           <tr>
+              <td>1</td>
+              <td>SK Slavia Praha</td>
+              <td>30</td>
+              <td>24</td>
+              <td>66</td>
+              <td>7</td>
+              <td>90:10</td>
+              <td>33</td>
+           </tr>
+           <tr>
+              <td>1</td>
+              <td>SK Slavia Praha</td>
+              <td>30</td>
+              <td>24</td>
+              <td>66</td>
+              <td>7</td>
+              <td>900:100</td>
+              <td>33</td>
+           </tr>
+           <tr>
+              <td>1</td>
+              <td>SK Slavia Praha</td>
+              <td>30</td>
+              <td>24</td>
+              <td>66</td>
+              <td>7</td>
+              <td>90:10</td>
+              <td>33</td>
+           </tr>
+           <tr class="vion">
+              <td>3</td>
+              <td>FK Vion</td>
+              <td>30</td>
+              <td>24</td>
+              <td>66</td>
+              <td>7</td>
+              <td>90:10</td>
+              <td>33</td>
+           </tr>
+           <tr>
+              <td>1</td>
+              <td>SK Slavia Praha</td>
+              <td>30</td>
+              <td>24</td>
+              <td>66</td>
+              <td>7</td>
+              <td>90:10</td>
+              <td>33</td>
+           </tr>
+        </table>
+       </div>
+       <div class="tabulka-page__inner" id="vonku">
+        <table>
+           <tr>
+              <th>P.</th>
+              <th><a href="#">Tím</a></th>
+              <th><a href="#">Z</a></th>
+              <th><a href="#">V</a></th>
+              <th><a href="#">R</a></th>
+              <th><a href="#">P</a></th>
+              <th>Scóre</th>
+              <th><a href="#">B</a></th>
+           </tr>
+           <tr>
+              <td>1</td>
+              <td>SK Slavia Praha</td>
+              <td>30</td>
+              <td>24</td>
+              <td>66</td>
+              <td>7</td>
+              <td>90:10</td>
+              <td>33</td>
+           </tr>
+           <tr>
+              <td>1</td>
+              <td>SK Slavia Praha</td>
+              <td>30</td>
+              <td>24</td>
+              <td>66</td>
+              <td>7</td>
+              <td>90:10</td>
+              <td>33</td>
+           </tr>
+           <tr>
+              <td>1</td>
+              <td>SK Slavia Praha</td>
+              <td>30</td>
+              <td>24</td>
+              <td>66</td>
+              <td>7</td>
+              <td>900:100</td>
+              <td>33</td>
+           </tr>
+           <tr>
+              <td>1</td>
+              <td>SK Slavia Praha</td>
+              <td>30</td>
+              <td>24</td>
+              <td>66</td>
+              <td>7</td>
+              <td>90:10</td>
+              <td>33</td>
+           </tr>
+           <tr class="vion">
+              <td>3</td>
+              <td>FK Vion</td>
+              <td>30</td>
+              <td>24</td>
+              <td>66</td>
+              <td>7</td>
+              <td>90:10</td>
+              <td>33</td>
+           </tr>
+           <tr>
+              <td>1</td>
+              <td>SK Slavia Praha</td>
+              <td>30</td>
+              <td>24</td>
+              <td>66</td>
+              <td>7</td>
+              <td>90:10</td>
+              <td>33</td>
+           </tr>
+        </table>
+       </div>
+    </div>
+   
    
 
    

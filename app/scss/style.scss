@@ -232,9 +232,7 @@
       max-width: 100%;
       font-size: 22px;
       line-height: 24px;
-      &:hover {
-        text-decoration: underline;
-      }
+    
     }
 
     a {
@@ -264,6 +262,7 @@
   .select__redirect {
     max-width: 280px;
     border-radius: 2px;
+    cursor: pointer;
   }
   .jq-selectbox__select-text::before {
     top: 9px;
@@ -286,9 +285,7 @@
   .aside__clanek-nazev {
     max-width: 100%;
     margin-bottom: 3px;
-    &:hover {
-      text-decoration: underline;
-    }
+  
   }
   &__item {
     margin: 30px 0;
@@ -500,6 +497,9 @@
       font-size: 24px;
       line-height: 26px;
       max-width: 225px;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
   .btn-clanky.btn {
@@ -525,6 +525,10 @@
   font-size: 21px;
   color: #000;
   border-top: 1px solid rgba(203, 212, 217, 0.5);
+  transition: all .3s;
+  &:hover{
+    text-decoration: underline;
+  }
   &::before {
     content: '';
     position: absolute;
@@ -669,6 +673,9 @@
 
   a {
     color: $red;
+    &:hover{
+      text-decoration: underline;
+    }
   }
 
 }
@@ -1883,6 +1890,7 @@ table#liders__table {
   font-size: 14px;
   font-weight: 700;
   line-height: 22px;
+  align-items: center;
   &__position {
     color: #000;
 
@@ -2582,15 +2590,30 @@ table#liders__table {
 }
 
 // table page
+
+
 .tabulka-page{
+  .tabl-tabs{
+    padding-left: 0;
+    &__tab{
+      &.active{
+        color: #000;
+      }
+    }
+  }
   &__inner{
     margin-bottom: 32px;
+    &.active-tab{
+      display: block;
+    }
+    display: none;
   }
    table th,  table td{
     padding: .35rem;
    }
    td{
-     font-weight: 500;
+     font-weight: 600;
+     font-family: 'Rajdhani', sans-serif;
      
    }
    th a{
