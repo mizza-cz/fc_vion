@@ -120,7 +120,45 @@ $(function () {
       enabled: true,
     },
   });
-
+  $('.hp-calendar').slick({
+		dots: false,
+		infinite: true,
+		arrows: true,
+		nextArrow: '<i class="material-icons slick-next">keyboard_backspace</i>',
+		prevArrow: '<i class="material-icons slick-back">keyboard_backspace</i>',
+		draggable: true,
+		swipeToSlide: true,
+		slidesToShow: 6,
+		initialSlide: 4,
+		responsive: [
+			{
+				breakpoint: 1250,
+				settings: {
+					slidesToShow: 6
+				}
+			},
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 5
+				}
+			},
+			{
+				breakpoint: 750,
+				settings: {
+					slidesToShow: 2,
+					initialSlide: 4
+				}
+			},
+      {
+				breakpoint: 400,
+				settings: {
+					slidesToShow: 1,
+					initialSlide: 4
+				}
+			}
+		]
+	});
   /// tabs game
   $('.game__wrapper .game-tabs__tab').on('click', function (event) {
     var id = $(this).attr('data-id');

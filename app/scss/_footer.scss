@@ -6,6 +6,9 @@
 }
 .footer {
   background-color: $gray;
+  &__logos {
+    display: none;
+  }
   a {
     color: #fff;
   }
@@ -113,6 +116,16 @@
 }
 
 @media (max-width: 480px) {
+  .footer__logos {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 16px;
+    a {
+      margin: 0 8px;
+      display: block;
+    }
+  }
   .subnav__menu-list + .subnav__menu-list {
     margin-left: 0;
     margin-top: 10px;

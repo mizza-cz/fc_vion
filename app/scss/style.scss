@@ -232,7 +232,6 @@
       max-width: 100%;
       font-size: 22px;
       line-height: 24px;
-    
     }
 
     a {
@@ -285,7 +284,6 @@
   .aside__clanek-nazev {
     max-width: 100%;
     margin-bottom: 3px;
-  
   }
   &__item {
     margin: 30px 0;
@@ -354,7 +352,7 @@
     color: #fff;
   }
 }
-#jsbutton{
+#jsbutton {
   width: auto;
 }
 //archiv page end ---------------------------------
@@ -525,8 +523,8 @@
   font-size: 21px;
   color: #000;
   border-top: 1px solid rgba(203, 212, 217, 0.5);
-  transition: all .3s;
-  &:hover{
+  transition: all 0.3s;
+  &:hover {
     text-decoration: underline;
   }
   &::before {
@@ -647,7 +645,7 @@
     line-height: 100%;
     margin-bottom: 5px;
   }
-  ul{
+  ul {
     margin-bottom: 30px;
   }
   li {
@@ -673,11 +671,10 @@
 
   a {
     color: $red;
-    &:hover{
+    &:hover {
       text-decoration: underline;
     }
   }
-
 }
 .typo__clanek {
   width: 100%;
@@ -707,8 +704,8 @@
     z-index: 5;
     max-width: 680px;
     .clanek__info {
-      justify-content: end;
       color: #fff;
+      justify-content: start;
     }
   }
 }
@@ -1104,10 +1101,10 @@ table#typo-table {
   display: flex;
 
   width: 100%;
-  &__logo{
+  &__logo {
     width: 80px;
     height: 80px;
-    img{
+    img {
       width: 100%;
       height: 100%;
       object-fit: contain;
@@ -1177,7 +1174,6 @@ table#typo-table {
 //// statistics section start ---------------------------------------------
 .statistics__inner {
   display: flex;
-  margin-bottom: 60px;
 }
 .tabl-liga,
 .tabl-right,
@@ -1304,7 +1300,7 @@ table th a,
 table td a {
   color: #2c2c2c;
   font-weight: 500;
-  &:hover{
+  &:hover {
     text-decoration: underline !important;
   }
 }
@@ -1507,10 +1503,10 @@ table#liders__table {
   width: 33.33%;
   position: relative;
   vertical-align: top;
-  transition: all .4s;
-  &-active{
+  transition: all 0.4s;
+  &-active {
     width: 50%;
-    h2{
+    h2 {
       text-decoration: underline;
     }
   }
@@ -1973,6 +1969,10 @@ table#liders__table {
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  .icon-goal {
+    position: relative;
+    top: -2px;
+  }
 }
 .timeline__line {
   position: relative;
@@ -2591,78 +2591,78 @@ table#liders__table {
 
 // table page
 
-
-.tabulka-page{
-  .tabl-tabs{
+.tabulka-page {
+  .tabl-tabs {
     padding-left: 0;
-    &__tab{
-      &.active{
+    &__tab {
+      &.active {
         color: #000;
       }
     }
   }
-  &__inner{
+  &__inner {
     margin-bottom: 32px;
-    &.active-tab{
+    &.active-tab {
       display: block;
     }
     display: none;
   }
-   table th,  table td{
-    padding: .35rem;
-   }
-   td{
-     font-weight: 600;
-     font-family: 'Rajdhani', sans-serif;
-     
-   }
-   th a{
-     color: $red;
-     text-decoration: underline;
-   }
-   th, th a{
-     font-weight: 700;
-     width: 70px;
-   }
+  table th,
+  table td {
+    padding: 0.35rem;
+  }
+  td {
+    font-weight: 600;
+    font-family: 'Rajdhani', sans-serif;
+  }
+  th a {
+    color: $red;
+    text-decoration: underline;
+  }
+  th,
+  th a {
+    font-weight: 700;
+    width: 70px;
+  }
 
-  th,td{
+  th,
+  td {
     text-align: center;
-    &:nth-child(2){
+    &:nth-child(2) {
       text-align: left;
       width: fit-content;
       font-weight: 700;
     }
-    &:first-child{
+    &:first-child {
       width: 40px;
       text-align: center;
     }
   }
-  .vion{
-    td{
+  .vion {
+    td {
       background-color: $red;
       color: #fff;
       font-weight: 700;
     }
   }
-  h2{
-    color: $red
+  h2 {
+    color: $red;
   }
 }
 
-
-.form-group{
+.form-group {
   margin-bottom: 1rem;
-  textarea{
+  textarea {
     border: 1px solid #eb1a13;
     padding: 10px 10px 10px 12px;
     border-radius: 2px;
     margin-bottom: 16px;
   }
-  label{
+  label {
     display: inline-block;
     margin-bottom: 0.5rem;
   }
-  input{
+  input {
     margin-bottom: 15px;
     width: 100%;
     height: 40px;
@@ -2670,9 +2670,8 @@ table#liders__table {
     padding: 10px 10px 10px 12px;
     border-radius: 2px;
   }
-  
 }
-.g-recaptcha{
+.g-recaptcha {
   margin-bottom: 16px;
 }
 

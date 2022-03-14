@@ -125,12 +125,15 @@
 
 /// 1280   -------------------- --------------------  --------------------
 @media (max-width: 1280px) {
-  .tabulka-page{
-    .main__content{
+  .tabl-right {
+    order: -1;
+  }
+  .tabulka-page {
+    .main__content {
       margin-right: 0;
       max-width: 100%;
     }
-    .aside{
+    .aside {
       display: none;
     }
   }
@@ -169,11 +172,16 @@
   .select__redirect {
     margin-bottom: 30px;
   }
+  .tabl-right__ban {
+    width: 100%;
+    a {
+      width: 100%;
+    }
+  }
 }
 
 // media 1200  -------------------- --------------------  --------------------
 @media (max-width: 1200px) {
-  
   .hrac__gallery-item {
     flex: 0 0 25%;
   }
@@ -592,13 +600,13 @@
 }
 /// media 780  -------------------- --------------------  --------------------
 @media (max-width: 780px) {
-  .tabulka-page__inner{
+  .tabulka-page__inner {
     overflow-x: auto;
-    table{
+    table {
       width: 720px;
     }
   }
-  .footer__scroll-top{
+  .footer__scroll-top {
     display: none;
   }
   .timeline__message {
@@ -931,7 +939,7 @@
   .typo__wrapper p:first-child {
     font-size: 18px;
   }
-  p{
+  p {
     font-size: 16px;
   }
   .typo__clanek {
