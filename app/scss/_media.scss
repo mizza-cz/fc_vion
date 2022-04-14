@@ -560,7 +560,7 @@
     width: 100%;
   }
   .clanek__img {
-    height: 350px;
+    height: auto;
     object-position: top;
   }
 }
@@ -666,9 +666,7 @@
     top: initial;
     bottom: 10px;
   }
-  .clanek__img {
-    height: 300px;
-  }
+ 
 }
 /// media 700  -------------------- --------------------  --------------------
 @media (max-width: 700px) {
@@ -722,13 +720,6 @@
   }
   .odrazky__item {
     min-width: 145px;
-  }
-}
-
-/// media 670  -------------------- --------------------  --------------------
-@media (max-width: 670px) {
-  .clanek__img {
-    height: 270px;
   }
 }
 
@@ -981,6 +972,24 @@
   .soupiska__item {
     width: 100%;
   }
+  .top-hrac{
+    height: auto;
+    max-height: 100%;
+  }
+  .top-hrac__position{
+    margin-left: 0;
+  }
+  .top-hrac__name{
+    font-size: 24px;
+    span{
+      font-size: 32px;
+    }
+  }
+  .top-hrac__title{
+    padding-left: 0;
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 
 /// media 480 -------------------- --------------------  --------------------
@@ -1073,12 +1082,7 @@
   .statistics__inner {
     margin-bottom: 30px;
   }
-  .top-hrac__name {
-    font-size: 30px;
-    span {
-      font-size: 40px;
-    }
-  }
+ 
   table#liders__table .liders__table-id {
     font-size: 26px;
     padding-left: 10px;
@@ -1125,9 +1129,6 @@
   }
   .calendar-team--left {
     margin-top: 45px;
-  }
-  .clanek__img {
-    height: 250px;
   }
   .clanek__title {
     font-size: 24px;
@@ -1253,13 +1254,9 @@
     min-height: 245px;
   }
   .top-hrac__name {
-    font-size: 26px;
     line-height: 39px;
     margin-bottom: 10px;
     padding-bottom: 20px;
-    span {
-      font-size: 36px;
-    }
   }
   .top-lider__img {
     margin-right: 15px;
