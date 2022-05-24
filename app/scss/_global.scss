@@ -109,6 +109,14 @@ body {
   .select__redirect {
     margin-right: 0;
   }
+  .select__redirect, .form-control.jq-selectbox{
+    background: transparent;
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  .jq-selectbox__select{
+    background-color: $red;
+  }
 }
 .btn {
   width: 72px;

@@ -11,10 +11,10 @@
     font-size: 20px;
     font-weight: bold;
     &--win {
-      color: $green;
+      color: $green !important;
     }
     &--loser {
-      color: $red;
+      color: $red !important;
     }
   }
 }
@@ -381,12 +381,12 @@
   &:hover {
     text-decoration: underline;
   }
-  color: $gray;
+  color: $gray !important;
   &--win {
-    color: $green;
+    color: $green !important;
   }
   &--loser {
-    color: $red;
+    color: $red !important;
   }
 }
 .zapasy-page__typ {
@@ -634,6 +634,12 @@
 //// typo page start ----------------------------------------------------
 .typo__wrapper {
   color: #000;
+  .game{
+    margin-bottom: 32px;
+    img{
+      min-height: auto;
+    }
+  }
   img {
     width: 100%;
     display: block;
