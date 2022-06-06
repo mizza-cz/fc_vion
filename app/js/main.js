@@ -203,53 +203,53 @@ $(function () {
     return false;
   });
 
-  $('#lightgallery').on('click', function () {
-    $(this).lightGallery({
-      dynamic: true,
-      dynamicEl: [
-        {
-          src: 'images/gallery/1.jpg',
-          thumb: 'images/gallery/1.jpg',
-          subHtml: '<h4>39. kolo Topligy (Foto: Josef Poláček)',
-        },
-        {
-          src: 'images/gallery/2.jpg',
-          thumb: 'images/gallery/2.jpg',
-          subHtml: '<h4>39. kolo Topligy (Foto: Josef Poláček)',
-        },
-        {
-          src: 'images/gallery/3.jpg',
-          thumb: 'images/gallery/3.jpg',
-          subHtml: '<h4>39. kolo Topligy (Foto: Josef Poláček)',
-        },
-        {
-          src: 'images/gallery/8.jpg',
-          thumb: 'images/gallery/8.jpg',
-          subHtml: '<h4>39. kolo Topligy (Foto: Josef Poláček)',
-        },
-        {
-          src: 'images/gallery/4.jpg',
-          thumb: 'images/gallery/4.jpg',
-          subHtml: '<h4>39. kolo Topligy (Foto: Josef Poláček)',
-        },
-        {
-          src: 'images/gallery/5.jpg',
-          thumb: 'images/gallery/5.jpg',
-          subHtml: '<h4>39. kolo Topligy (Foto: Josef Poláček)',
-        },
-        {
-          src: 'images/gallery/6.jpg',
-          thumb: 'images/gallery/6.jpg',
-          subHtml: '<h4>39. kolo Topligy (Foto: Josef Poláček)',
-        },
-        {
-          src: 'images/gallery/7.jpg',
-          thumb: 'images/gallery/7.jpg',
-          subHtml: '<h4>39. kolo Topligy (Foto: Josef Poláček)',
-        },
-      ],
-    });
-  });
+  // $('#lightgallery').on('click', function () {
+  //   $(this).lightGallery({
+  //     dynamic: true,
+  //     dynamicEl: [
+  //       {
+  //         src: 'images/gallery/1.jpg',
+  //         thumb: 'images/gallery/1.jpg',
+  //         subHtml: '<h4>39. kolo Topligy (Foto: Josef Poláček)',
+  //       },
+  //       {
+  //         src: 'images/gallery/2.jpg',
+  //         thumb: 'images/gallery/2.jpg',
+  //         subHtml: '<h4>39. kolo Topligy (Foto: Josef Poláček)',
+  //       },
+  //       {
+  //         src: 'images/gallery/3.jpg',
+  //         thumb: 'images/gallery/3.jpg',
+  //         subHtml: '<h4>39. kolo Topligy (Foto: Josef Poláček)',
+  //       },
+  //       {
+  //         src: 'images/gallery/8.jpg',
+  //         thumb: 'images/gallery/8.jpg',
+  //         subHtml: '<h4>39. kolo Topligy (Foto: Josef Poláček)',
+  //       },
+  //       {
+  //         src: 'images/gallery/4.jpg',
+  //         thumb: 'images/gallery/4.jpg',
+  //         subHtml: '<h4>39. kolo Topligy (Foto: Josef Poláček)',
+  //       },
+  //       {
+  //         src: 'images/gallery/5.jpg',
+  //         thumb: 'images/gallery/5.jpg',
+  //         subHtml: '<h4>39. kolo Topligy (Foto: Josef Poláček)',
+  //       },
+  //       {
+  //         src: 'images/gallery/6.jpg',
+  //         thumb: 'images/gallery/6.jpg',
+  //         subHtml: '<h4>39. kolo Topligy (Foto: Josef Poláček)',
+  //       },
+  //       {
+  //         src: 'images/gallery/7.jpg',
+  //         thumb: 'images/gallery/7.jpg',
+  //         subHtml: '<h4>39. kolo Topligy (Foto: Josef Poláček)',
+  //       },
+  //     ],
+  //   });
+  // });
 });
 
 
